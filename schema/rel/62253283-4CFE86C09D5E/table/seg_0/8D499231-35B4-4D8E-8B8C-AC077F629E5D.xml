@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D499231-35B4-4D8E-8B8C-AC077F629E5D" schemaObject="73994963-2FA4-B3C8-9BC5-9E29E1870661" name="RPG_MAGIC_TYPES">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>RPG_MAGIC_TYPES</sourceObjName>
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:50 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MAGIC_ID" id="02574B20-A770-1224-EA13-330D647003E2">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_MAGIC_TYPES</sourceObjSchema>
+<sourceObjName>MAGIC_ID</sourceObjName>
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:50 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAGIC_NAME" id="5CFB061C-A256-A4E0-0780-519B8ED560FA">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_MAGIC_TYPES</sourceObjSchema>
+<sourceObjName>MAGIC_NAME</sourceObjName>
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:50 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CED27270-B1F9-E667-C81E-32F3F2EEE9C7" schemaObject="73994963-2FA4-B3C8-9BC5-9E29E1870661" name="RPG_MAGIC_TYPES_PK">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>SYS_C007172</sourceObjName>
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:50 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02574B20-A770-1224-EA13-330D647003E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

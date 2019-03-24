@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="93968A4F-F311-ADF0-B9A1-7AA0B7AE5DC5" containerWithKeyObject="0C175892-5559-EC33-550F-70C6B797FAEA" localFKIndex="0951146F-4AC0-FCBF-41D6-EF22D5A8014F" name="FK_ITEMS_RARITY">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>FK_ITEMS_RARITY</sourceObjName>
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:44 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<referredTableLongName>STUDENT.RPG_ITEM_RARITY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>34B5F281-CF05-F03B-B84F-88268E78A4BA</referredTableID>
+<keyObject>85BE4997-7FF9-3CA3-AA52-24198F207A70</keyObject>
+<referredKeyID>85BE4997-7FF9-3CA3-AA52-24198F207A70</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>RARITY_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

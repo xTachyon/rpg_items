@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A66A885C-6857-9289-E6F5-73342EFA45B4" containerWithKeyObject="0C175892-5559-EC33-550F-70C6B797FAEA" localFKIndex="3DE7D68B-0644-B201-CC91-DE57B3D15D09" name="FK_ITEMS_MAGIC_TYPES">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>FK_ITEMS_MAGIC_TYPES</sourceObjName>
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:44 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<referredTableLongName>STUDENT.RPG_MAGIC_TYPES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8D499231-35B4-4D8E-8B8C-AC077F629E5D</referredTableID>
+<keyObject>CED27270-B1F9-E667-C81E-32F3F2EEE9C7</keyObject>
+<referredKeyID>CED27270-B1F9-E667-C81E-32F3F2EEE9C7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MAGIC_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

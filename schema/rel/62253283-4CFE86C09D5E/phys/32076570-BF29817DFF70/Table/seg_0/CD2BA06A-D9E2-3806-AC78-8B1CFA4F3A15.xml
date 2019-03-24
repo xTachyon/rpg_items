@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RPG_CLASSES" directorySegmentName="seg_0" id="CD2BA06A-D9E2-3806-AC78-8B1CFA4F3A15">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:16 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<schemaObject>73994963-2FA4-B3C8-9BC5-9E29E1870661</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>5DBC60E4-1F4F-EB8C-0A6F-AEFFBEB847C2</segment>
+<tableSpace>516984CB-0D2D-AE6C-B5F3-A4199B00FBD0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CLASS_NAME" id="187CD03E-E847-BAC1-679F-8F6C6DB30997">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:16 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLASS_ID" id="C69E218C-8022-0681-27BF-3E43279DE23A">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:16 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RPG_CLASSES_PK" id="61CA9787-D481-ED70-01FB-2A1442D12EED">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:16 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<schemaObject>73994963-2FA4-B3C8-9BC5-9E29E1870661</schemaObject>
+<segment>B0F5AC0E-B75F-5B15-234D-32C000C6681A</segment>
+<tableSpace>516984CB-0D2D-AE6C-B5F3-A4199B00FBD0</tableSpace>
+<indexSegment>B0F5AC0E-B75F-5B15-234D-32C000C6681A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

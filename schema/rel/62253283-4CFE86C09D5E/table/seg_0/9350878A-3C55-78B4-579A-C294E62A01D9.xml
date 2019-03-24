@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9350878A-3C55-78B4-579A-C294E62A01D9" schemaObject="73994963-2FA4-B3C8-9BC5-9E29E1870661" name="RPG_MAGIC_WEAKNESSES">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>RPG_MAGIC_WEAKNESSES</sourceObjName>
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:57 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="WEAKNESS_ID" id="4D04A712-C17A-143F-1B9B-EA88B992A4A7">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_MAGIC_WEAKNESSES</sourceObjSchema>
+<sourceObjName>WEAKNESS_ID</sourceObjName>
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:57 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WEAKNESS_OF" id="6BC2C0C0-1925-A4AA-C5E2-1E2E586A0432">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_MAGIC_WEAKNESSES</sourceObjSchema>
+<sourceObjName>WEAKNESS_OF</sourceObjName>
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:57 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95C953B3-6DB1-743A-EA8B-4965FA8187E1" referredColumn="02574B20-A770-1224-EA13-330D647003E2"/>
+</associations>
+</Column>
+<Column name="WEAKNESS_TO" id="DFCC674D-F7F3-5512-965C-2087FC392403">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_MAGIC_WEAKNESSES</sourceObjSchema>
+<sourceObjName>WEAKNESS_TO</sourceObjName>
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:57 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="258AFB5D-874D-A752-4F1A-9A186FC19B8E" referredColumn="02574B20-A770-1224-EA13-330D647003E2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1B7EA6EE-C928-DD61-1303-ED0E49A6B5B0" schemaObject="73994963-2FA4-B3C8-9BC5-9E29E1870661" name="RPG_MAGIC_WEAKNESSES_PK">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>SYS_C007193</sourceObjName>
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:57 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D04A712-C17A-143F-1B9B-EA88B992A4A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D6FE790-4F6B-813B-BCDD-86071219D250" name="FK_MAGIC_WEAK_MAGIC_TYPES1">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:57 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BC2C0C0-1925-A4AA-C5E2-1E2E586A0432"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DC75948-345C-6281-B48D-E1067F863473" name="FK_MAGIC_WEAK_MAGIC_TYPES2">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:20:57 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFCC674D-F7F3-5512-965C-2087FC392403"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="schema" id="D17066E1-C5A4-6745-E929-32878E88A995" version="3.5">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:19:25 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D17066E1-C5A4-6745-E929-32878E88A995</designId>
+</OSDM_Design>

@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RPG_STATS" directorySegmentName="seg_0" id="86154D65-6FAD-F598-65CF-B55F8F158612">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:21:11 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<schemaObject>73994963-2FA4-B3C8-9BC5-9E29E1870661</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>5DBC60E4-1F4F-EB8C-0A6F-AEFFBEB847C2</segment>
+<tableSpace>516984CB-0D2D-AE6C-B5F3-A4199B00FBD0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="VALUE" id="1FC5596F-222C-3147-311C-AC5514B7FD58">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:21:11 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE" id="37A2A2FD-07A0-48C9-0124-AAF9C53D03D8">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:21:11 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STAT_ID" id="504BA66D-55EE-5ECC-58B3-ECEBCFC533A9">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:21:11 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ITEM_ID" id="88E3C86A-9F41-FA80-B334-B492CBBDF000">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:21:11 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_STATS_STAT_TYPES" id="69673569-D1F9-00FA-7A4C-7C8540C24C85">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:21:11 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_STATS_ITEMS" id="E1BC40C3-6B0E-799F-107B-E6536ACBDC03">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:21:11 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RPG_STATS_PK" id="C30C957C-9295-4D59-86A9-0F0E89AC8E29">
+<createdBy>andamian</createdBy>
+<createdTime>2019-03-24 10:21:11 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<schemaObject>73994963-2FA4-B3C8-9BC5-9E29E1870661</schemaObject>
+<segment>B0F5AC0E-B75F-5B15-234D-32C000C6681A</segment>
+<tableSpace>516984CB-0D2D-AE6C-B5F3-A4199B00FBD0</tableSpace>
+<indexSegment>B0F5AC0E-B75F-5B15-234D-32C000C6681A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
