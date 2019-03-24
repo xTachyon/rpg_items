@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD772CEF-9B93-6988-F92F-D7EDAFFD2A23" schemaObject="CF578692-64D3-5AFA-DC89-7751B81F36D4" name="RPG_CHARACTERS">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>RPG_CHARACTERS</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CHARACTER_ID" id="DE31D9C8-26C9-C3E3-901A-1D949AE28472">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_CHARACTERS</sourceObjSchema>
+<sourceObjName>CHARACTER_ID</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ID" id="40472AD0-2FB7-FA70-F2C8-073EEE3BF843">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_CHARACTERS</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A503615-A06D-1098-14D1-A8C98A40FF71" referredColumn="EF55A1EB-EC44-232A-952E-D957C48499E0"/>
+</associations>
+</Column>
+<Column name="NAME" id="50435AC1-91AC-EA6B-5BA0-DAA939178854">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_CHARACTERS</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHARACTER_LEVEL" id="0752CA0D-3758-5076-A238-FF804AC1C188">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_CHARACTERS</sourceObjSchema>
+<sourceObjName>CHARACTER_LEVEL</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLASS_ID" id="FC97BCB0-C52D-595E-F08D-AEBAEF2A1A68">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_CHARACTERS</sourceObjSchema>
+<sourceObjName>CLASS_ID</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6C8DD01-218B-D2F8-C584-38360AB44F1D" referredColumn="55A94F5E-0715-252E-1DBE-8BBD2F7A28A7"/>
+</associations>
+</Column>
+<Column name="GOLD" id="274FA5FB-AF8A-74A4-D8B8-CD9390B52AA0">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_CHARACTERS</sourceObjSchema>
+<sourceObjName>GOLD</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4BDC8D9-E1DE-E5DB-3E1D-853595B819C8" schemaObject="CF578692-64D3-5AFA-DC89-7751B81F36D4" name="RPG_CHARACTERS_PK">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>SYS_C007700</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE31D9C8-26C9-C3E3-901A-1D949AE28472"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D58B56BC-EB04-BECE-F37A-725E468FD99A" name="FK_CHARACTERS_CLASS">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC97BCB0-C52D-595E-F08D-AEBAEF2A1A68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62FED9F6-CE34-E780-1727-C914703731B9" name="FK_CHARACTERS_USERS">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40472AD0-2FB7-FA70-F2C8-073EEE3BF843"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

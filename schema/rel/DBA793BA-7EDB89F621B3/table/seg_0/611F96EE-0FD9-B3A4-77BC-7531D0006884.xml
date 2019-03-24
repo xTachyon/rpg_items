@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="611F96EE-0FD9-B3A4-77BC-7531D0006884" schemaObject="CF578692-64D3-5AFA-DC89-7751B81F36D4" name="RPG_STATS">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>RPG_STATS</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:38:58 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STAT_ID" id="6574CF4D-5690-4E4E-7E6E-614602FE2BF6">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_STATS</sourceObjSchema>
+<sourceObjName>STAT_ID</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:38:58 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ITEM_ID" id="9650E7B0-8C12-8AE6-7AE3-FB0020EED33A">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_STATS</sourceObjSchema>
+<sourceObjName>ITEM_ID</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:38:58 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C419825E-F61A-843A-2406-29579A881AC4" referredColumn="323BE8A5-C4EE-A9B4-0EB3-3E8C4934247A"/>
+</associations>
+</Column>
+<Column name="TYPE" id="A457ADCA-9B1F-C8F7-1475-41C18B23E547">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_STATS</sourceObjSchema>
+<sourceObjName>TYPE</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:38:58 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08FE064F-4099-4B71-2B2B-AF18CCAD8AB5" referredColumn="86B187ED-7350-2DC7-8DE7-92FE45E62A17"/>
+</associations>
+</Column>
+<Column name="VALUE" id="3CDBF986-4E47-93F0-FEE0-B0FB10C9F479">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_STATS</sourceObjSchema>
+<sourceObjName>VALUE</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:38:58 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4849F8BD-693E-B64F-94EF-9D41A57B733C" schemaObject="CF578692-64D3-5AFA-DC89-7751B81F36D4" name="RPG_STATS_PK">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>SYS_C007813</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:38:58 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6574CF4D-5690-4E4E-7E6E-614602FE2BF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28369A97-8B27-1FBF-3B60-8889B6603800" name="FK_STATS_ITEMS">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:38:58 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9650E7B0-8C12-8AE6-7AE3-FB0020EED33A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60DCE9AD-4FCE-25FC-B355-E30ED5F6B36D" name="FK_STATS_STAT_TYPES">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:38:58 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A457ADCA-9B1F-C8F7-1475-41C18B23E547"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

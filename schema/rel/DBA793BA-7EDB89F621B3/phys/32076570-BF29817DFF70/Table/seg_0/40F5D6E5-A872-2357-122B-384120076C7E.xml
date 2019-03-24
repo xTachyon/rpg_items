@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RPG_STAT_TYPES" directorySegmentName="seg_0" id="40F5D6E5-A872-2357-122B-384120076C7E">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:27:00 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<schemaObject>CF578692-64D3-5AFA-DC89-7751B81F36D4</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>340FABA9-B76D-BD1D-D029-8BF2D9CD1C79</segment>
+<tableSpace>439A1BFC-FB07-5401-E860-2BA063F1622D</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAME" id="7248F5B8-4811-909E-539C-F97A564B1F21">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:27:00 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE_ID" id="86B187ED-7350-2DC7-8DE7-92FE45E62A17">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:27:00 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RPG_STAT_TYPES_PK" id="001A19A9-D72E-C718-C630-E727C7CAA0D4">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:27:00 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<schemaObject>CF578692-64D3-5AFA-DC89-7751B81F36D4</schemaObject>
+<segment>487DBE5A-AE55-2B1A-D4D1-2EC023F24114</segment>
+<tableSpace>439A1BFC-FB07-5401-E860-2BA063F1622D</tableSpace>
+<indexSegment>487DBE5A-AE55-2B1A-D4D1-2EC023F24114</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

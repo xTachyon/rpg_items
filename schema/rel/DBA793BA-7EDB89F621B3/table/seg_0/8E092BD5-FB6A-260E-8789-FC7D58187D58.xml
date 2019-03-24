@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E092BD5-FB6A-260E-8789-FC7D58187D58" schemaObject="CF578692-64D3-5AFA-DC89-7751B81F36D4" name="RPG_FRIENDS">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>RPG_FRIENDS</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:27 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FRIENDSHIP_ID" id="91A51460-449A-C250-8329-D0F62737BDCA">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_FRIENDS</sourceObjSchema>
+<sourceObjName>FRIENDSHIP_ID</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:27 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ID1" id="1A86682B-90A2-159E-BBA0-5E7B98F5A4C1">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_FRIENDS</sourceObjSchema>
+<sourceObjName>USER_ID1</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:27 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E00C4B9-9724-6B2C-5618-28D2CA7486FC" referredColumn="EF55A1EB-EC44-232A-952E-D957C48499E0"/>
+</associations>
+</Column>
+<Column name="USER_ID2" id="EA373823-0F74-FAF1-0437-56328788E90E">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_FRIENDS</sourceObjSchema>
+<sourceObjName>USER_ID2</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:27 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3009ABD-F08D-6223-FD19-BEBAA147302D" referredColumn="EF55A1EB-EC44-232A-952E-D957C48499E0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF921EC0-1D46-689F-B4A4-BCEEA0348112" schemaObject="CF578692-64D3-5AFA-DC89-7751B81F36D4" name="RPG_FRIENDS_PK">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>SYS_C007690</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:27 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91A51460-449A-C250-8329-D0F62737BDCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DF13E70-771E-1E3A-2724-DDB05CC1EF1A" name="FK_FRIENDS_USERS1">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:27 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A86682B-90A2-159E-BBA0-5E7B98F5A4C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C53ADC12-AB5D-4E54-BBAD-D88876D19127" name="FK_FRIENDS_USERS2">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:27 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA373823-0F74-FAF1-0437-56328788E90E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

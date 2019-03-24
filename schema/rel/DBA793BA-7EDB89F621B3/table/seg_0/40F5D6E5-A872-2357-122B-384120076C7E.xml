@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40F5D6E5-A872-2357-122B-384120076C7E" schemaObject="CF578692-64D3-5AFA-DC89-7751B81F36D4" name="RPG_STAT_TYPES">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>RPG_STAT_TYPES</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:27:00 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TYPE_ID" id="86B187ED-7350-2DC7-8DE7-92FE45E62A17">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_STAT_TYPES</sourceObjSchema>
+<sourceObjName>TYPE_ID</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:27:00 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="7248F5B8-4811-909E-539C-F97A564B1F21">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>RPG_STAT_TYPES</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:27:00 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="001A19A9-D72E-C718-C630-E727C7CAA0D4" schemaObject="CF578692-64D3-5AFA-DC89-7751B81F36D4" name="RPG_STAT_TYPES_PK">
+<sourceConnName>Student</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>SYS_C007723</sourceObjName>
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:27:00 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86B187ED-7350-2DC7-8DE7-92FE45E62A17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

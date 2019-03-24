@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RPG_CHARACTERS" directorySegmentName="seg_0" id="BD772CEF-9B93-6988-F92F-D7EDAFFD2A23">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<schemaObject>CF578692-64D3-5AFA-DC89-7751B81F36D4</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>340FABA9-B76D-BD1D-D029-8BF2D9CD1C79</segment>
+<tableSpace>439A1BFC-FB07-5401-E860-2BA063F1622D</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CHARACTER_LEVEL" id="0752CA0D-3758-5076-A238-FF804AC1C188">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GOLD" id="274FA5FB-AF8A-74A4-D8B8-CD9390B52AA0">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_ID" id="40472AD0-2FB7-FA70-F2C8-073EEE3BF843">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="50435AC1-91AC-EA6B-5BA0-DAA939178854">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CHARACTER_ID" id="DE31D9C8-26C9-C3E3-901A-1D949AE28472">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLASS_ID" id="FC97BCB0-C52D-595E-F08D-AEBAEF2A1A68">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CHARACTERS_USERS" id="62FED9F6-CE34-E780-1727-C914703731B9">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CHARACTERS_CLASS" id="D58B56BC-EB04-BECE-F37A-725E468FD99A">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RPG_CHARACTERS_PK" id="D4BDC8D9-E1DE-E5DB-3E1D-853595B819C8">
+<createdBy>Matei</createdBy>
+<createdTime>2019-03-24 13:26:17 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<schemaObject>CF578692-64D3-5AFA-DC89-7751B81F36D4</schemaObject>
+<segment>487DBE5A-AE55-2B1A-D4D1-2EC023F24114</segment>
+<tableSpace>439A1BFC-FB07-5401-E860-2BA063F1622D</tableSpace>
+<indexSegment>487DBE5A-AE55-2B1A-D4D1-2EC023F24114</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
