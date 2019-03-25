@@ -20,13 +20,14 @@ DROP TABLE rpg_stats CASCADE CONSTRAINTS
 /
 DROP TABLE rpg_magic_weaknesses CASCADE CONSTRAINTS
 /
+DROP TABLE rpg_types_compatibility CASCADE CONSTRAINTS;
+/
 
 create table rpg_users (
   user_id number primary key,
-  username varchar2(20) not null,
+  username varchar2(20) not null unique,
   password varchar2(50) not null,
-  email varchar2(50) not null,
-  created_at date not null
+  email varchar2(50) not null unique
 );
 /
 
@@ -39,7 +40,8 @@ create table rpg_friends (
     references rpg_users(user_id),
   constraint fk_friends_users2
     foreign key (user_id2)
-    references rpg_users(user_id)
+    references rpg_users(user_id),
+  constraint no_duplicates_friends unique (user_id1, user_id2)
 );
 /
 
@@ -56,6 +58,7 @@ create table rpg_characters (
   character_level number not null,
   class_id number not null,
   gold number not null,
+  deleted_at date,
   constraint fk_characters_users
     foreign key (user_id)
     references rpg_users(user_id),
@@ -111,7 +114,9 @@ create table rpg_items (
 
 create table rpg_stat_types (
   type_id number primary key,
-  name varchar2(200) not null
+  name varchar2(200) not null unique,
+  min_base_value number,
+  max_base_value number
 );
 /
 
@@ -138,9 +143,22 @@ create table rpg_magic_weaknesses (
     references rpg_magic_types(magic_id),
   constraint fk_magic_weak_magic_types2
     foreign key (weakness_to)
-    references rpg_magic_types(magic_id)
+    references rpg_magic_types(magic_id),
+  constraint no_duplicates_magic_weaknesses unique (weakness_of, weakness_to)
 );
 
+create table rpg_types_compatibility(
+  compatibility_id number primary key,
+  item_type_id number,
+  stat_type_id number,
+  constraint fk_compatibility_item_type
+    foreign key (item_type_id)
+    references rpg_item_types(type_id),
+  constraint fk_compatibility_stat_type
+    foreign key (stat_type_id)
+    references rpg_stat_types(type_id),
+  constraint no_duplicates_compatibility unique (item_type_id, stat_type_id)
+);
 /*
 create sequence rpg_users_seq start with 1;
 
