@@ -52,7 +52,7 @@ create sequence rpg_magic_weaknesses_seq start with 1;
 
 -- create data for our tables
 set serveroutput on;
-
+create or replace type arr_varchar2 is table of varchar2(200);
 -- =====================================================================================================================
 
 -- magic types:
@@ -61,7 +61,6 @@ drop sequence rpg_magic_types_seq;
 create sequence rpg_magic_types_seq start with 1;
 /
 DECLARE
-  type arr_varchar2 is table of varchar2(200);
   weakness_list arr_varchar2 := arr_varchar2('common','fire','water','air','earth');
 BEGIN
   delete from rpg_magic_types;
@@ -109,6 +108,10 @@ BEGIN
 END;
 /
 
-select * from RPG_MAGIC_WEAKNESSES;
+-- select * from RPG_MAGIC_WEAKNESSES;
 
 -- =====================================================================================================================
+
+-- item utilities:
+-- there will be mainly 3 utilities: attack, defence and any
+

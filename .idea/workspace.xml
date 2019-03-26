@@ -52,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="175" column="39" lean-forward="true" selection-end-line="194" selection-end-column="2" />
+            <state relative-caret-position="143">
+              <caret line="168" column="35" lean-forward="true" selection-end-line="194" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -61,8 +61,8 @@
       <file pinned="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rpg_create.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="105" column="38" lean-forward="true" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+            <state relative-caret-position="415">
+              <caret line="110" column="3" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -130,14 +130,14 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Database" order="0" sideWeight="0.49840257" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Database" order="0" sideWeight="0.49840257" visible="true" weight="0.25" />
       <window_info id="Favorites" order="1" sideWeight="0.50159746" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" weight="0.3290461" />
-      <window_info anchor="bottom" id="Database Console" order="5" visible="true" weight="0.2829582" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="5" visible="true" weight="0.2829582" />
       <window_info anchor="bottom" id="Database Changes" order="6" weight="0.3290461" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
@@ -252,13 +252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="175" column="39" lean-forward="true" selection-end-line="194" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_USERS">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -281,7 +274,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0270588235294118" x="656.2857200980645" y="248.8591065292096" />
+          <settings layout="Hierarchic Group" zoom="1.3270588235294118" x="805.4042553191489" y="272.5150709219858" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
@@ -290,10 +283,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="168" column="35" lean-forward="true" selection-end-line="194" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rpg_create.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="105" column="38" lean-forward="true" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+        <state relative-caret-position="415">
+          <caret line="110" column="3" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="3" />
         </state>
       </provider>
     </entry>
