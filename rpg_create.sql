@@ -375,3 +375,24 @@ END;
 begin
   generate_characters();
 end;
+
+-- =====================================================================================================================
+
+-- class stats:
+drop sequence RPG_CLASS_STATS_SEQ;
+/
+create sequence RPG_CLASS_STATS_SEQ start with 1;
+/
+DECLARE
+  cursor classes_list is select CLASS_ID from RPG_CLASSES;
+  cursor stats_list is select type_id from RPG_STAT_TYPES;
+BEGIN
+  -- initialization
+  for class in classes_list loop
+    for stat in stats_list loop
+      insert into RPG_CLASS_STATS values (RPG_CLASS_STATS_SEQ.nextval,class.CLASS_ID,stat.TYPE_ID,0);
+    end loop;
+  end loop;
+
+END;
+/
