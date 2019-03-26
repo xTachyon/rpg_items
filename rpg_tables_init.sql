@@ -90,7 +90,8 @@ create table rpg_item_types (
 create table rpg_item_rarity (
   rarity_id number primary key,
   rarity_name varchar2(200) not null,
-  rarity_color varchar2(200) not null
+  rarity_color varchar2(200) not null,
+  stats_number number
 );
 /
 
