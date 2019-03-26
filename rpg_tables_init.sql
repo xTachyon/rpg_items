@@ -8,6 +8,8 @@ DROP TABLE rpg_characters CASCADE CONSTRAINTS
 /
 DROP TABLE rpg_items CASCADE CONSTRAINTS
 /
+DROP TABLE rpg_item_utilities CASCADE CONSTRAINTS
+/
 DROP TABLE rpg_item_types CASCADE CONSTRAINTS
 /
 DROP TABLE rpg_item_rarity CASCADE CONSTRAINTS
@@ -16,12 +18,13 @@ DROP TABLE rpg_magic_types CASCADE CONSTRAINTS
 /
 DROP TABLE rpg_stat_types CASCADE CONSTRAINTS
 /
-DROP TABLE rpg_stats CASCADE CONSTRAINTS
+DROP TABLE rpg_item_stats CASCADE CONSTRAINTS
+/
+DROP TABLE rpg_class_stats CASCADE CONSTRAINTS
 /
 DROP TABLE rpg_magic_weaknesses CASCADE CONSTRAINTS
 /
-DROP TABLE rpg_types_compatibility CASCADE CONSTRAINTS;
-/
+
 
 create table rpg_users (
   user_id number primary key,
@@ -68,9 +71,19 @@ create table rpg_characters (
 );
 /
 
+create table rpg_item_utilities (
+  utility_id number primary key,
+  utility_name varchar2(200) not null
+);
+/
+
 create table rpg_item_types (
   type_id number primary key,
-  type_name varchar2(200) not null
+  utility_id number not null,
+  type_name varchar2(200) not null,
+  constraint fk_item_types_utility
+    foreign key (utility_id)
+    references rpg_item_utilities(utility_id)
 );
 /
 
@@ -97,6 +110,7 @@ create table rpg_items (
   item_type number not null,
   item_rarity number not null,
   item_magic_type number not null,
+  is_equipped number(1) default 0,
   constraint fk_items_characters
     foreign key (owner_id)
     references rpg_characters(character_id),
@@ -114,22 +128,40 @@ create table rpg_items (
 
 create table rpg_stat_types (
   type_id number primary key,
+  utility_id number not null,
   name varchar2(200) not null unique,
   min_base_value number,
-  max_base_value number
+  max_base_value number,
+  constraint fk_stat_types_utility
+    foreign key (utility_id)
+    references rpg_item_utilities(utility_id)
 );
 /
 
-create table rpg_stats (
+create table rpg_item_stats (
   stat_id number primary key,
   item_id number not null,
-  type number not null,
+  type_id number not null,
   value number not null,
-  constraint fk_stats_items
+  constraint fk_item_stats_items
     foreign key (item_id)
     references rpg_items(item_id),
-  constraint fk_stats_stat_types
-    foreign key (type)
+  constraint fk_item_stats_stat_types
+    foreign key (type_id)
+    references rpg_stat_types(type_id)
+);
+/
+
+create table rpg_class_stats (
+  stat_id number primary key,
+  class_id number not null,
+  type_id number not null,
+  value number not null,
+  constraint fk_class_stats_classes
+    foreign key (class_id)
+    references rpg_classes(class_id),
+  constraint fk_class_stats_stat_types
+    foreign key (type_id)
     references rpg_stat_types(type_id)
 );
 /
@@ -147,18 +179,7 @@ create table rpg_magic_weaknesses (
   constraint no_duplicates_magic_weaknesses unique (weakness_of, weakness_to)
 );
 
-create table rpg_types_compatibility(
-  compatibility_id number primary key,
-  item_type_id number,
-  stat_type_id number,
-  constraint fk_compatibility_item_type
-    foreign key (item_type_id)
-    references rpg_item_types(type_id),
-  constraint fk_compatibility_stat_type
-    foreign key (stat_type_id)
-    references rpg_stat_types(type_id),
-  constraint no_duplicates_compatibility unique (item_type_id, stat_type_id)
-);
+
 /*
 create sequence rpg_users_seq start with 1;
 

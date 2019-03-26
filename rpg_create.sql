@@ -17,11 +17,11 @@ drop sequence rpg_magic_types_seq;
 /
 drop sequence rpg_stat_types_seq;
 /
-drop sequence rpg_stats_seq;
+drop sequence rpg_item_stats_seq;
+/
+drop sequence rpg_class_stats_seq;
 /
 drop sequence rpg_magic_weaknesses_seq;
-/
-drop sequence rpg_types_compatibility_seq;
 /
 
 create sequence rpg_users_seq start with 1;
@@ -42,11 +42,11 @@ create sequence rpg_magic_types_seq start with 1;
 /
 create sequence rpg_stat_types_seq start with 1;
 /
-create sequence rpg_stats_seq start with 1;
+create sequence rpg_item_stats_seq start with 1;
+/
+create sequence rpg_class_stats_seq start with 1;
 /
 create sequence rpg_magic_weaknesses_seq start with 1;
-/
-create sequence rpg_types_compatibility_seq start with 1;
 /
 
 
@@ -108,6 +108,7 @@ BEGIN
   add_magic_weakness('air','fire');
 END;
 /
--- select * from RPG_MAGIC_WEAKNESSES;
+
+select * from RPG_MAGIC_WEAKNESSES;
 
 -- =====================================================================================================================
