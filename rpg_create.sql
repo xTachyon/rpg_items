@@ -65,7 +65,7 @@ drop sequence rpg_magic_types_seq;
 create sequence rpg_magic_types_seq start with 1;
 /
 DECLARE
-  weakness_list arr_varchar2 := arr_varchar2('common', 'fire', 'water', 'air', 'earth');
+  weakness_list arr_varchar2 := arr_varchar2('common','fire','water','air','earth');
 BEGIN
   -- delete from rpg_magic_types;
   FOR i IN weakness_list.first .. weakness_list.last loop
@@ -90,11 +90,10 @@ create or replace procedure add_magic_weakness(name_weakness_of in varchar2, nam
 begin
   select MAGIC_ID into weakness_of from RPG_MAGIC_TYPES where MAGIC_NAME = lower(name_weakness_of);
   select MAGIC_ID into weakness_to from RPG_MAGIC_TYPES where MAGIC_NAME = lower(name_weakness_to);
-  if (weakness_of <> 0 and weakness_to <> 0) then
-    insert into RPG_MAGIC_WEAKNESSES values (rpg_magic_weaknesses_seq.nextval, weakness_of, weakness_to);
+  if (weakness_of<>0 and weakness_to<>0) then
+    insert into RPG_MAGIC_WEAKNESSES values (rpg_magic_weaknesses_seq.nextval,weakness_of,weakness_to);
   else
-    DBMS_OUTPUT.put_line('add_magic_weakness: ERROR - ' || name_weakness_of || ' or ' || name_weakness_to ||
-                         ' is not a valid magic type!');
+    DBMS_OUTPUT.put_line('add_magic_weakness: ERROR - '|| name_weakness_of ||' or '||name_weakness_to||' is not a valid magic type!');
   end if;
 end;
 /
@@ -234,3 +233,145 @@ END;
 
 -- select * from RPG_ITEM_RARITY;
 
+create or replace function generate_email return varchar2 as
+  names_list arr_varchar2 := arr_varchar2('andrei', 'mihai', 'matei');
+  providers_list arr_varchar2 := arr_varchar2('gmail', 'yahoo');
+
+  result varchar2(200);
+  r number;
+  r2 number;
+  r3 number;
+BEGIN
+  r := DBMS_RANDOM.value(1, names_list.COUNT);
+  r2 := DBMS_RANDOM.value(1, names_list.COUNT);
+  r3 := DBMS_RANDOM.value(1, providers_list.COUNT);
+
+--   result := names_list(r) || '_' || names_list(r2) || '@' || providers_list(r3) || '.com';
+  result := generate_random_string(DBMS_RANDOM.value(5, 20)) || '_' || names_list(r2) || '@' || providers_list(r3) || '.com';
+
+
+  return result;
+END;
+
+select generate_email()
+from dual;
+
+create or replace function generate_random_string(string_length number) return varchar2 as
+  letters_numbers varchar2(200) := 'abcdefghijklmnopqrstuvwxyz';
+
+  result varchar2(200);
+BEGIN
+  result := '';
+
+  for i in 1..string_length loop
+    result := result || substr(letters_numbers, DBMS_RANDOM.value(1, length(letters_numbers)), 1);
+  end loop;
+
+  return result;
+END;
+
+-- select generate_random_string(50)
+-- from dual;
+
+create or replace procedure generate_user is
+  username_list arr_varchar2 := arr_varchar2('tachyon', 'ml997', 'lamp');
+
+  username varchar2(200);
+  password varchar2(200);
+  email varchar2(200);
+BEGIN
+  username := generate_random_string(DBMS_RANDOM.value(15, 20));
+  password := generate_random_string(DBMS_RANDOM.value(15, 20));
+  email := generate_email();
+
+  insert into RPG_USERS
+  values (rpg_users_seq.nextval, username, password, email);
+END;
+
+begin
+  for i in 0..25000 loop
+    generate_user();
+  end loop;
+end;
+
+-- select * from RPG_USERS;
+
+create or replace procedure generate_friendships is
+  id1 number;
+  id2 number;
+  friends_already number;
+  countt number;
+BEGIN
+  select count(*)
+  into countt
+  from RPG_USERS;
+
+  loop
+    id1 := trunc(DBMS_RANDOM.value(0, countt)) + 1;
+    id2 := trunc(DBMS_RANDOM.value(0, countt)) + 1;
+
+    exit when id1 <> id2;
+  end loop;
+
+  select count(*)
+  into friends_already
+  from RPG_FRIENDS
+  where (USER_ID1 = id1 and USER_ID2 = id2) or (USER_ID1 = id2 and USER_ID2 = id1);
+
+  if friends_already = 0 then
+    insert into RPG_FRIENDS
+    values (rpg_friends_seq.nextval, id1, id2);
+  end if;
+END;
+
+begin
+  for i in 0..1000 loop
+    generate_friendships();
+  end loop;
+end;
+
+-- select count(*)
+-- from RPG_FRIENDS;
+--
+-- select *
+-- from RPG_FRIENDS;
+
+begin
+  insert into RPG_CLASSES values (rpg_classes_seq.nextval, 'archer');
+  insert into RPG_CLASSES values (rpg_classes_seq.nextval, 'warrior');
+  insert into RPG_CLASSES values (rpg_classes_seq.nextval, 'assassin');
+  insert into RPG_CLASSES values (rpg_classes_seq.nextval, 'wizard');
+end;
+
+create or replace procedure generate_characters is
+  cursor c is select USER_ID from RPG_USERS;
+  class_count number;
+
+  number_characters number;
+  name varchar2(200);
+  character_level number;
+  classs number;
+  gold number;
+BEGIN
+  select count(*)
+  into class_count
+  from rpg_classes;
+
+  for row in c loop
+    number_characters := DBMS_RANDOM.value(2, 7);
+    for i in 0..number_characters loop
+      name := generate_random_string(DBMS_RANDOM.value(15, 20));
+      character_level := DBMS_RANDOM.value(1, 100);
+      classs := trunc(DBMS_RANDOM.value(1, class_count));
+--       dbms_output.put_line(classs);
+      gold := DBMS_RANDOM.value(1, 342512);
+
+      insert into RPG_CHARACTERS
+      values(RPG_CHARACTERS_SEQ.nextval, row.USER_ID, name, character_level, classs, gold, null);
+    end loop;
+  end loop;
+END;
+
+begin
+  generate_characters();
+end;
