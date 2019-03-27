@@ -49,47 +49,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="84" column="28" lean-forward="true" selection-end-line="195" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rpg_create.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="235" lean-forward="true" selection-start-line="235" selection-end-line="235" />
+            <state relative-caret-position="176">
+              <caret line="118" column="37" lean-forward="true" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../script_populare_student.sql">
+        <entry file="file://$PROJECT_DIR$/rpg_create.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+            <state relative-caret-position="407">
+              <caret line="400" lean-forward="true" selection-start-line="400" selection-end-line="400" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>prieteni</find>
+      <find>class</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/rpg_create_matei.sql" />
         <option value="$PROJECT_DIR$/rpg_tables_init.sql" />
         <option value="$PROJECT_DIR$/rpg_create.sql" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="218" />
+    <option name="y" value="230" />
+    <option name="width" value="979" />
+    <option name="height" value="880" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -130,14 +129,14 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Database" order="0" sideWeight="0.49840257" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Database" order="0" sideWeight="0.49840257" weight="0.17750533" />
       <window_info id="Favorites" order="1" sideWeight="0.50159746" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="5" visible="true" weight="0.2829582" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="5" visible="true" weight="0.28831726" />
       <window_info anchor="bottom" id="Database Changes" order="6" weight="0.3290461" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
@@ -146,13 +145,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/PRIETENI/index/SYS_C007313">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/PRIETENI/index/SYS_C007313" />
     <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/PRIETENI/index/NO_DUPLICATES">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -215,151 +208,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0fad524c-b4e4-4404-bee0-a573d1dd0d43/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="uml://DATABASE/0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CHARACTERS">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CHARACTERS</OriginalElement>
-          <nodes>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_TYPES</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_FRIENDS</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_TYPES</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_USERS</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_WEAKNESSES</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CLASSES</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_RARITY</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEMS</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_UTILITIES</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_STAT_TYPES</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_STATS</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CHARACTERS</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.9845238095238095" x="701.0" y="558.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_USERS">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_USERS</OriginalElement>
-          <nodes>
-            <node x="1025.09375" y="212.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_TYPES</node>
-            <node x="574.09375" y="212.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_FRIENDS</node>
-            <node x="113.09375000000011" y="223.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_TYPES</node>
-            <node x="517.3437500000001" y="0.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_USERS</node>
-            <node x="72.0" y="479.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_WEAKNESSES</node>
-            <node x="132.2812500000001" y="22.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CLASSES</node>
-            <node x="803.25" y="712.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_STATS</node>
-            <node x="20.5" y="712.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CLASS_STATS</node>
-            <node x="551.0" y="402.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEMS</node>
-            <node x="1085.3229166666667" y="22.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_UTILITIES</node>
-            <node x="1136.8229166666667" y="457.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_STAT_TYPES</node>
-            <node x="792.09375" y="212.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_RARITY</node>
-            <node x="338.0937500000001" y="168.0">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CHARACTERS</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CLASS_STATS" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CLASSES">
-              <point x="-41.0" y="-59.0" />
-              <point x="61.5" y="143.0" />
-              <point x="181.0312500000001" y="143.0" />
-              <point x="-48.75" y="37.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEMS" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CHARACTERS">
-              <point x="-31.0" y="-125.0" />
-              <point x="644.0" y="372.0" />
-              <point x="446.0937500000001" y="372.0" />
-              <point x="0.0" y="92.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_STATS" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_STAT_TYPES">
-              <point x="39.5" y="-59.0" />
-              <point x="921.75" y="692.0" />
-              <point x="1297.3229166666667" y="692.0" />
-              <point x="53.5" y="70.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEMS" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_RARITY">
-              <point x="31.0" y="-125.0" />
-              <point x="706.0" y="372.0" />
-              <point x="898.59375" y="372.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_TYPES" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_UTILITIES">
-              <point x="0.0" y="-48.0" />
-              <point x="1121.59375" y="143.0" />
-              <point x="1137.8229166666667" y="143.0" />
-              <point x="-52.5" y="37.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEMS" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_TYPES">
-              <point x="93.0" y="-125.0" />
-              <point x="768.0" y="382.0" />
-              <point x="1121.59375" y="382.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_STAT_TYPES" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_UTILITIES">
-              <point x="0.0" y="-70.0" />
-              <point x="52.5" y="37.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CHARACTERS" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CLASSES">
-              <point x="-54.0" y="-92.0" />
-              <point x="392.0937500000001" y="143.0" />
-              <point x="278.5312500000001" y="143.0" />
-              <point x="48.75" y="37.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CLASS_STATS" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_STAT_TYPES">
-              <point x="41.0" y="-59.0" />
-              <point x="143.5" y="682.0" />
-              <point x="1190.3229166666667" y="682.0" />
-              <point x="-53.5" y="70.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEMS" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_TYPES">
-              <point x="-93.0" y="-125.0" />
-              <point x="582.0" y="382.0" />
-              <point x="283.9270833333334" y="382.0" />
-              <point x="68.33333333333331" y="37.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_STATS" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEMS">
-              <point x="-39.5" y="-59.0" />
-              <point x="842.75" y="672.0" />
-              <point x="675.0" y="672.0" />
-              <point x="0.0" y="125.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_WEAKNESSES" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_TYPES">
-              <point x="48.75" y="-48.0" />
-              <point x="218.25" y="382.0" />
-              <point x="215.5937500000001" y="382.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CHARACTERS" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_USERS">
-              <point x="54.0" y="-92.0" />
-              <point x="500.0937500000001" y="143.0" />
-              <point x="548.6770833333335" y="143.0" />
-              <point x="-62.66666666666663" y="59.0" />
-            </edge>
-            <edge source="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_FRIENDS" target="0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_USERS">
-              <point x="-49.5" y="-48.0" />
-              <point x="623.59375" y="143.0" />
-              <point x="611.3437500000001" y="143.0" />
-              <point x="0.0" y="59.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.3501094091903719" x="2446.3750000000005" y="764.8906250000001" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_STAT_TYPES">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -382,12 +230,13 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.8717647058823529" x="749.4878542510122" y="386.64642375168694" />
+          <settings layout="Hierarchic Group" zoom="0.8717647058823529" x="749.0" y="387.0" />
           <SelectedNodes />
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -400,22 +249,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../script_populare_student.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+        <state relative-caret-position="125">
+          <caret line="189" column="27" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="84" column="28" lean-forward="true" selection-end-line="195" selection-end-column="2" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEMS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpg_create_matei.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="uml://DATABASE/0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CHARACTERS">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CHARACTERS</OriginalElement>
+          <nodes>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_TYPES</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_FRIENDS</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_TYPES</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_USERS</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_WEAKNESSES</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CLASSES</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_STATS</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_RARITY</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEMS</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_UTILITIES</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_STAT_TYPES</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CLASS_STATS</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CHARACTERS</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8388235294117646" x="799.1486676016831" y="376.38849929873777" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_USERS">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_USERS</OriginalElement>
+          <nodes>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_TYPES</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_FRIENDS</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_TYPES</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_USERS</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_WEAKNESSES</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEMS</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_STATS</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_RARITY</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_ITEM_UTILITIES</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_STAT_TYPES</node>
+            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_CHARACTERS</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7493887530562348" x="669.5" y="389.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rpg_create.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="235" lean-forward="true" selection-start-line="235" selection-end-line="235" />
+        <state relative-caret-position="407">
+          <caret line="400" lean-forward="true" selection-start-line="400" selection-end-line="400" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="118" column="37" lean-forward="true" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
         </state>
       </provider>
     </entry>

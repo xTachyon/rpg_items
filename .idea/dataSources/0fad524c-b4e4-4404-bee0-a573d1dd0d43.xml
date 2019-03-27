@@ -50,8 +50,8 @@
     <schema id="15" parent="1" name="STUDENT">
       <ObjectId>48</ObjectId>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:24:00</ModifiedTimestamp>
-      <IntrospectionTimestamp>2019-03-27.00:24:00</IntrospectionTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:24:23</ModifiedTimestamp>
+      <IntrospectionTimestamp>2019-03-28.00:24:24</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -27900,243 +27900,275 @@
       <TargetObjectName>_USER_COMPARISON_ROW_DIF</TargetObjectName>
     </synonym>
     <sequence id="3996" parent="15" name="RPG_CHARACTERS_SEQ">
-      <ObjectId>24226</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:59</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:59</ModifiedTimestamp>
+      <ObjectId>25967</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:20:22</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:22</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="3997" parent="15" name="RPG_CLASSES_SEQ">
-      <ObjectId>24225</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:59</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:59</ModifiedTimestamp>
+    <sequence id="3997" parent="15" name="RPG_FRIENDS_SEQ">
+      <ObjectId>25966</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:20:22</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:22</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="3998" parent="15" name="RPG_CLASS_STATS_SEQ">
-      <ObjectId>24234</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:59</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:59</ModifiedTimestamp>
+    <sequence id="3998" parent="15" name="RPG_ITEMS_SEQ">
+      <ObjectId>25981</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:21:31</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:21:31</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="3999" parent="15" name="RPG_FRIENDS_SEQ">
-      <ObjectId>24224</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:59</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:59</ModifiedTimestamp>
+    <sequence id="3999" parent="15" name="RPG_ITEM_RARITY_SEQ">
+      <ObjectId>25980</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:20:23</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:23</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="4000" parent="15" name="RPG_ITEMS_SEQ">
-      <ObjectId>24227</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:59</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:59</ModifiedTimestamp>
+    <sequence id="4000" parent="15" name="RPG_ITEM_STATS_SEQ">
+      <ObjectId>25982</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:21:31</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:21:31</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="4001" parent="15" name="RPG_ITEM_RARITY_SEQ">
-      <ObjectId>24241</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:24:00</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:24:00</ModifiedTimestamp>
+    <sequence id="4001" parent="15" name="RPG_ITEM_TYPES_SEQ">
+      <ObjectId>25978</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:20:22</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:22</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="4002" parent="15" name="RPG_ITEM_STATS_SEQ">
-      <ObjectId>24233</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:59</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:59</ModifiedTimestamp>
+    <sequence id="4002" parent="15" name="RPG_ITEM_UTILITIES_SEQ">
+      <ObjectId>25977</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:20:22</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:22</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="4003" parent="15" name="RPG_ITEM_TYPES_SEQ">
-      <ObjectId>24239</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:24:00</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:24:00</ModifiedTimestamp>
+    <sequence id="4003" parent="15" name="RPG_MAGIC_TYPES_SEQ">
+      <ObjectId>25975</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:20:22</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:22</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="4004" parent="15" name="RPG_ITEM_UTILITIES_SEQ">
-      <ObjectId>24238</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:24:00</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:24:00</ModifiedTimestamp>
+    <sequence id="4004" parent="15" name="RPG_MAGIC_WEAKNESSES_SEQ">
+      <ObjectId>25976</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:20:22</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:22</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="4005" parent="15" name="RPG_MAGIC_TYPES_SEQ">
-      <ObjectId>24236</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:24:00</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:24:00</ModifiedTimestamp>
+    <sequence id="4005" parent="15" name="RPG_STAT_TYPES_SEQ">
+      <ObjectId>25979</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:20:22</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:22</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="4006" parent="15" name="RPG_MAGIC_WEAKNESSES_SEQ">
-      <ObjectId>24237</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:24:00</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:24:00</ModifiedTimestamp>
+    <sequence id="4006" parent="15" name="RPG_USERS_SEQ">
+      <ObjectId>25965</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:20:22</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:22</ModifiedTimestamp>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
-    <sequence id="4007" parent="15" name="RPG_STAT_TYPES_SEQ">
-      <ObjectId>24240</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:24:00</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:24:00</ModifiedTimestamp>
-      <SequenceIdentity>1</SequenceIdentity>
-    </sequence>
-    <sequence id="4008" parent="15" name="RPG_USERS_SEQ">
-      <ObjectId>24223</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:59</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:59</ModifiedTimestamp>
-      <SequenceIdentity>1</SequenceIdentity>
-    </sequence>
-    <table id="4009" parent="15" name="CURSURI">
+    <table id="4007" parent="15" name="CURSURI">
       <ObjectId>22286</ObjectId>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4010" parent="15" name="DIDACTIC">
+    <table id="4008" parent="15" name="DIDACTIC">
       <ObjectId>22292</ObjectId>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4011" parent="15" name="NOTE">
+    <table id="4009" parent="15" name="NOTE">
       <ObjectId>22288</ObjectId>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4012" parent="15" name="PRIETENI">
+    <table id="4010" parent="15" name="PRIETENI">
       <ObjectId>22294</ObjectId>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4013" parent="15" name="PROFESORI">
+    <table id="4011" parent="15" name="PROFESORI">
       <ObjectId>22290</ObjectId>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4014" parent="15" name="RPG_CHARACTERS">
-      <ObjectId>24201</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <table id="4012" parent="15" name="RPG_CHARACTERS">
+      <ObjectId>25945</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4015" parent="15" name="RPG_CLASSES">
-      <ObjectId>24199</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <table id="4013" parent="15" name="RPG_FRIENDS">
+      <ObjectId>25942</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4016" parent="15" name="RPG_CLASS_STATS">
-      <ObjectId>24218</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <table id="4014" parent="15" name="RPG_ITEMS">
+      <ObjectId>25955</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4017" parent="15" name="RPG_FRIENDS">
-      <ObjectId>24196</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <table id="4015" parent="15" name="RPG_ITEM_RARITY">
+      <ObjectId>25951</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4018" parent="15" name="RPG_ITEMS">
-      <ObjectId>24211</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <table id="4016" parent="15" name="RPG_ITEM_STATS">
+      <ObjectId>25960</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4019" parent="15" name="RPG_ITEM_RARITY">
-      <ObjectId>24207</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <table id="4017" parent="15" name="RPG_ITEM_TYPES">
+      <ObjectId>25949</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4020" parent="15" name="RPG_ITEM_STATS">
-      <ObjectId>24216</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <table id="4018" parent="15" name="RPG_ITEM_UTILITIES">
+      <ObjectId>25947</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4021" parent="15" name="RPG_ITEM_TYPES">
-      <ObjectId>24205</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <table id="4019" parent="15" name="RPG_MAGIC_TYPES">
+      <ObjectId>25953</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4022" parent="15" name="RPG_ITEM_UTILITIES">
-      <ObjectId>24203</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <table id="4020" parent="15" name="RPG_MAGIC_WEAKNESSES">
+      <ObjectId>25962</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4023" parent="15" name="RPG_MAGIC_TYPES">
-      <ObjectId>24209</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <table id="4021" parent="15" name="RPG_STAT_TYPES">
+      <ObjectId>25957</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4024" parent="15" name="RPG_MAGIC_WEAKNESSES">
-      <ObjectId>24220</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <table id="4022" parent="15" name="RPG_USERS">
+      <ObjectId>25938</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="4025" parent="15" name="RPG_STAT_TYPES">
-      <ObjectId>24213</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
-      <TemporaryPreserve>1</TemporaryPreserve>
-    </table>
-    <table id="4026" parent="15" name="RPG_USERS">
-      <ObjectId>24192</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
-      <TemporaryPreserve>1</TemporaryPreserve>
-    </table>
-    <table id="4027" parent="15" name="STUDENTI">
+    <table id="4023" parent="15" name="STUDENTI">
       <ObjectId>22284</ObjectId>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <collection-type id="4028" parent="15" name="ARR_VARCHAR2">
+    <collection-type id="4024" parent="15" name="ARR_VARCHAR2">
       <ObjectId>23592</ObjectId>
       <ElementType>VARCHAR2(200 byte)|0s</ElementType>
       <TypeKind>nested-table</TypeKind>
       <CreatedTimestamp>2019-03-26.23:05:54</CreatedTimestamp>
       <ModifiedTimestamp>2019-03-26.23:05:54</ModifiedTimestamp>
     </collection-type>
-    <routine id="4029" parent="15" name="ADD_MAGIC_WEAKNESS">
+    <routine id="4025" parent="15" name="ADD_MAGIC_WEAKNESS">
       <ObjectId>22911</ObjectId>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>711</SourceTextLength>
-      <DependsOnIds>4852,4973,24209,24220,24237</DependsOnIds>
+      <DependsOnIds>4852,4973,25953,25962,25976</DependsOnIds>
       <CreatedTimestamp>2019-03-25.19:08:46</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:24:00</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:22</ModifiedTimestamp>
     </routine>
-    <column id="4030" parent="4009" name="ID">
+    <routine id="4026" parent="15" name="GENERATE_CHARACTERS">
+      <ObjectId>24538</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>607</SourceTextLength>
+      <DependsOnIds>4852,8960,24535,25967,25938,25945</DependsOnIds>
+      <CreatedTimestamp>2019-03-27.09:15:00</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:21:24</ModifiedTimestamp>
+    </routine>
+    <routine id="4027" parent="15" name="GENERATE_EMAIL">
+      <ObjectId>24434</ObjectId>
+      <RoutineKind>function</RoutineKind>
+      <SourceTextLength>646</SourceTextLength>
+      <DependsOnIds>4851,4852,8960,23592,24535</DependsOnIds>
+      <CreatedTimestamp>2019-03-27.09:13:24</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-27.09:14:55</ModifiedTimestamp>
+    </routine>
+    <routine id="4028" parent="15" name="GENERATE_FRIENDSHIPS">
+      <ObjectId>24537</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>585</SourceTextLength>
+      <DependsOnIds>4852,8960,25966,25938,25942</DependsOnIds>
+      <CreatedTimestamp>2019-03-27.09:14:59</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:25</ModifiedTimestamp>
+    </routine>
+    <routine id="4029" parent="15" name="GENERATE_RANDOM_ITEM">
+      <ObjectId>24932</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>1416</SourceTextLength>
+      <DependsOnIds>4852,8960,25951,25955,25978,25981,25980,25975,25945</DependsOnIds>
+      <CreatedTimestamp>2019-03-27.16:23:53</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:24:23</ModifiedTimestamp>
+    </routine>
+    <routine id="4030" parent="15" name="GENERATE_RANDOM_ITEM_STAT">
+      <ObjectId>25143</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>1326</SourceTextLength>
+      <DependsOnIds>4852,8958,8960,25957,25960,25947,25949</DependsOnIds>
+      <CreatedTimestamp>2019-03-27.17:11:11</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:21:31</ModifiedTimestamp>
+    </routine>
+    <routine id="4031" parent="15" name="GENERATE_RANDOM_STRING">
+      <ObjectId>24535</ObjectId>
+      <RoutineKind>function</RoutineKind>
+      <SourceTextLength>359</SourceTextLength>
+      <DependsOnIds>4852,8960</DependsOnIds>
+      <CreatedTimestamp>2019-03-27.09:14:55</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-27.09:14:55</ModifiedTimestamp>
+    </routine>
+    <routine id="4032" parent="15" name="GENERATE_USER">
+      <ObjectId>24536</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>439</SourceTextLength>
+      <DependsOnIds>4852,8960,24535,24434,23592,25965,25938</DependsOnIds>
+      <CreatedTimestamp>2019-03-27.09:14:55</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:20:23</ModifiedTimestamp>
+    </routine>
+    <column id="4033" parent="4007" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4031" parent="4009" name="TITLU_CURS">
+    <column id="4034" parent="4007" name="TITLU_CURS">
       <Position>2</Position>
       <DataType>VARCHAR2(52 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4032" parent="4009" name="AN">
+    <column id="4035" parent="4007" name="AN">
       <Position>3</Position>
       <DataType>NUMBER(1 digit)|0s</DataType>
     </column>
-    <column id="4033" parent="4009" name="SEMESTRU">
+    <column id="4036" parent="4007" name="SEMESTRU">
       <Position>4</Position>
       <DataType>NUMBER(1 digit)|0s</DataType>
     </column>
-    <column id="4034" parent="4009" name="CREDITE">
+    <column id="4037" parent="4007" name="CREDITE">
       <Position>5</Position>
       <DataType>NUMBER(2 digit)|0s</DataType>
     </column>
-    <column id="4035" parent="4009" name="CREATED_AT">
+    <column id="4038" parent="4007" name="CREATED_AT">
       <Position>6</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="4036" parent="4009" name="UPDATED_AT">
+    <column id="4039" parent="4007" name="UPDATED_AT">
       <Position>7</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <index id="4037" parent="4009" name="SYS_C007294">
+    <index id="4040" parent="4007" name="SYS_C007294">
       <ObjectId>22287</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
@@ -28145,7 +28177,7 @@
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4038" parent="4009" name="SYS_C007294">
+    <key id="4041" parent="4007" name="SYS_C007294">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -28153,30 +28185,30 @@
       <UnderlyingIndexName>SYS_C007294</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="4039" parent="4010" name="ID">
+    <column id="4042" parent="4008" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4040" parent="4010" name="ID_PROFESOR">
+    <column id="4043" parent="4008" name="ID_PROFESOR">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4041" parent="4010" name="ID_CURS">
+    <column id="4044" parent="4008" name="ID_CURS">
       <Position>3</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4042" parent="4010" name="CREATED_AT">
+    <column id="4045" parent="4008" name="CREATED_AT">
       <Position>4</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="4043" parent="4010" name="UPDATED_AT">
+    <column id="4046" parent="4008" name="UPDATED_AT">
       <Position>5</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <index id="4044" parent="4010" name="SYS_C007308">
+    <index id="4047" parent="4008" name="SYS_C007308">
       <ObjectId>22293</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
@@ -28185,7 +28217,7 @@
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4045" parent="4010" name="SYS_C007308">
+    <key id="4048" parent="4008" name="SYS_C007308">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -28193,7 +28225,7 @@
       <UnderlyingIndexName>SYS_C007308</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="4046" parent="4010" name="FK_DIDACTIC_ID_PROFESOR">
+    <foreign-key id="4049" parent="4008" name="FK_DIDACTIC_ID_PROFESOR">
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID_PROFESOR</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
@@ -28201,7 +28233,7 @@
       <RefKeyName>SYS_C007304</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="4047" parent="4010" name="FK_DIDACTIC_ID_CURS">
+    <foreign-key id="4050" parent="4008" name="FK_DIDACTIC_ID_CURS">
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID_CURS</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
@@ -28209,38 +28241,38 @@
       <RefKeyName>SYS_C007294</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="4048" parent="4011" name="ID">
+    <column id="4051" parent="4009" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4049" parent="4011" name="ID_STUDENT">
+    <column id="4052" parent="4009" name="ID_STUDENT">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4050" parent="4011" name="ID_CURS">
+    <column id="4053" parent="4009" name="ID_CURS">
       <Position>3</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4051" parent="4011" name="VALOARE">
+    <column id="4054" parent="4009" name="VALOARE">
       <Position>4</Position>
       <DataType>NUMBER(2 digit)|0s</DataType>
     </column>
-    <column id="4052" parent="4011" name="DATA_NOTARE">
+    <column id="4055" parent="4009" name="DATA_NOTARE">
       <Position>5</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="4053" parent="4011" name="CREATED_AT">
+    <column id="4056" parent="4009" name="CREATED_AT">
       <Position>6</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="4054" parent="4011" name="UPDATED_AT">
+    <column id="4057" parent="4009" name="UPDATED_AT">
       <Position>7</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <index id="4055" parent="4011" name="SYS_C007298">
+    <index id="4058" parent="4009" name="SYS_C007298">
       <ObjectId>22289</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
@@ -28249,7 +28281,7 @@
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4056" parent="4011" name="SYS_C007298">
+    <key id="4059" parent="4009" name="SYS_C007298">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -28257,7 +28289,7 @@
       <UnderlyingIndexName>SYS_C007298</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="4057" parent="4011" name="FK_NOTE_ID_STUDENT">
+    <foreign-key id="4060" parent="4009" name="FK_NOTE_ID_STUDENT">
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID_STUDENT</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
@@ -28265,7 +28297,7 @@
       <RefKeyName>SYS_C007291</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="4058" parent="4011" name="FK_NOTE_ID_CURS">
+    <foreign-key id="4061" parent="4009" name="FK_NOTE_ID_CURS">
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID_CURS</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
@@ -28273,30 +28305,30 @@
       <RefKeyName>SYS_C007294</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="4059" parent="4012" name="ID">
+    <column id="4062" parent="4010" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4060" parent="4012" name="ID_STUDENT1">
+    <column id="4063" parent="4010" name="ID_STUDENT1">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4061" parent="4012" name="ID_STUDENT2">
+    <column id="4064" parent="4010" name="ID_STUDENT2">
       <Position>3</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4062" parent="4012" name="CREATED_AT">
+    <column id="4065" parent="4010" name="CREATED_AT">
       <Position>4</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="4063" parent="4012" name="UPDATED_AT">
+    <column id="4066" parent="4010" name="UPDATED_AT">
       <Position>5</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <index id="4064" parent="4012" name="SYS_C007313">
+    <index id="4067" parent="4010" name="SYS_C007313">
       <ObjectId>22295</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
@@ -28305,7 +28337,7 @@
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="4065" parent="4012" name="NO_DUPLICATES">
+    <index id="4068" parent="4010" name="NO_DUPLICATES">
       <ObjectId>22296</ObjectId>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
@@ -28314,7 +28346,7 @@
 ID_STUDENT2</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4066" parent="4012" name="SYS_C007313">
+    <key id="4069" parent="4010" name="SYS_C007313">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -28322,14 +28354,14 @@ ID_STUDENT2</ColNames>
       <UnderlyingIndexName>SYS_C007313</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="4067" parent="4012" name="NO_DUPLICATES">
+    <key id="4070" parent="4010" name="NO_DUPLICATES">
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID_STUDENT1
 ID_STUDENT2</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>NO_DUPLICATES</UnderlyingIndexName>
     </key>
-    <foreign-key id="4068" parent="4012" name="FK_PRIETENI_ID_STUDENT1">
+    <foreign-key id="4071" parent="4010" name="FK_PRIETENI_ID_STUDENT1">
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID_STUDENT1</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
@@ -28337,7 +28369,7 @@ ID_STUDENT2</ColNames>
       <RefKeyName>SYS_C007291</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="4069" parent="4012" name="FK_PRIETENI_ID_STUDENT2">
+    <foreign-key id="4072" parent="4010" name="FK_PRIETENI_ID_STUDENT2">
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID_STUDENT2</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
@@ -28345,34 +28377,34 @@ ID_STUDENT2</ColNames>
       <RefKeyName>SYS_C007291</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="4070" parent="4013" name="ID">
+    <column id="4073" parent="4011" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4071" parent="4013" name="NUME">
+    <column id="4074" parent="4011" name="NUME">
       <Position>2</Position>
       <DataType>VARCHAR2(15 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4072" parent="4013" name="PRENUME">
+    <column id="4075" parent="4011" name="PRENUME">
       <Position>3</Position>
       <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4073" parent="4013" name="GRAD_DIDACTIC">
+    <column id="4076" parent="4011" name="GRAD_DIDACTIC">
       <Position>4</Position>
       <DataType>VARCHAR2(20 byte)|0s</DataType>
     </column>
-    <column id="4074" parent="4013" name="CREATED_AT">
+    <column id="4077" parent="4011" name="CREATED_AT">
       <Position>5</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="4075" parent="4013" name="UPDATED_AT">
+    <column id="4078" parent="4011" name="UPDATED_AT">
       <Position>6</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <index id="4076" parent="4013" name="SYS_C007304">
+    <index id="4079" parent="4011" name="SYS_C007304">
       <ObjectId>22291</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
@@ -28381,7 +28413,7 @@ ID_STUDENT2</ColNames>
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4077" parent="4013" name="SYS_C007304">
+    <key id="4080" parent="4011" name="SYS_C007304">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -28389,744 +28421,646 @@ ID_STUDENT2</ColNames>
       <UnderlyingIndexName>SYS_C007304</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="4078" parent="4014" name="CHARACTER_ID">
+    <column id="4081" parent="4012" name="CHARACTER_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4079" parent="4014" name="USER_ID">
+    <column id="4082" parent="4012" name="USER_ID">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4080" parent="4014" name="NAME">
+    <column id="4083" parent="4012" name="NAME">
       <Position>3</Position>
       <DataType>VARCHAR2(20 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4081" parent="4014" name="CHARACTER_LEVEL">
+    <column id="4084" parent="4012" name="CHARACTER_LEVEL">
       <Position>4</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4082" parent="4014" name="CLASS_ID">
+    <column id="4085" parent="4012" name="GOLD">
       <Position>5</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4083" parent="4014" name="GOLD">
+    <column id="4086" parent="4012" name="DELETED_AT">
       <Position>6</Position>
-      <DataType>NUMBER(*)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="4084" parent="4014" name="DELETED_AT">
-      <Position>7</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <index id="4085" parent="4014" name="SYS_C0010252">
-      <ObjectId>24202</ObjectId>
+    <index id="4087" parent="4012" name="SYS_C0012422">
+      <ObjectId>25946</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>CHARACTER_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4086" parent="4014" name="SYS_C0010252">
+    <key id="4088" parent="4012" name="SYS_C0012422">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>CHARACTER_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010252</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012422</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="4087" parent="4014" name="FK_CHARACTERS_USERS">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4089" parent="4012" name="FK_CHARACTERS_USERS">
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>USER_ID</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_USERS</RefTableName>
-      <RefKeyName>SYS_C0010236</RefKeyName>
+      <RefKeyName>SYS_C0012409</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="4088" parent="4014" name="FK_CHARACTERS_CLASS">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
-      <ColNames>CLASS_ID</ColNames>
-      <RefSchemaName>STUDENT</RefSchemaName>
-      <RefTableName>RPG_CLASSES</RefTableName>
-      <RefKeyName>SYS_C0010246</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <column id="4089" parent="4015" name="CLASS_ID">
+    <column id="4090" parent="4013" name="FRIENDSHIP_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4090" parent="4015" name="CLASS_NAME">
-      <Position>2</Position>
-      <DataType>VARCHAR2(50 byte)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="4091" parent="4015" name="SYS_C0010246">
-      <ObjectId>24200</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>CLASS_ID</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="4092" parent="4015" name="SYS_C0010246">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
-      <ColNames>CLASS_ID</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010246</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="4093" parent="4016" name="STAT_ID">
-      <Position>1</Position>
-      <DataType>NUMBER(*)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="4094" parent="4016" name="CLASS_ID">
+    <column id="4091" parent="4013" name="USER_ID1">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4095" parent="4016" name="TYPE_ID">
+    <column id="4092" parent="4013" name="USER_ID2">
       <Position>3</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4096" parent="4016" name="VALUE">
-      <Position>4</Position>
-      <DataType>NUMBER(*)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="4097" parent="4016" name="SYS_C0010292">
-      <ObjectId>24219</ObjectId>
+    <index id="4093" parent="4013" name="SYS_C0012414">
+      <ObjectId>25943</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>STAT_ID</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="4098" parent="4016" name="SYS_C0010292">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
-      <ColNames>STAT_ID</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010292</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="4099" parent="4016" name="FK_CLASS_STATS_CLASSES">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
-      <ColNames>CLASS_ID</ColNames>
-      <RefSchemaName>STUDENT</RefSchemaName>
-      <RefTableName>RPG_CLASSES</RefTableName>
-      <RefKeyName>SYS_C0010246</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <foreign-key id="4100" parent="4016" name="FK_CLASS_STATS_STAT_TYPES">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
-      <ColNames>TYPE_ID</ColNames>
-      <RefSchemaName>STUDENT</RefSchemaName>
-      <RefTableName>RPG_STAT_TYPES</RefTableName>
-      <RefKeyName>SYS_C0010280</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <column id="4101" parent="4017" name="FRIENDSHIP_ID">
-      <Position>1</Position>
-      <DataType>NUMBER(*)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="4102" parent="4017" name="USER_ID1">
-      <Position>2</Position>
-      <DataType>NUMBER(*)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="4103" parent="4017" name="USER_ID2">
-      <Position>3</Position>
-      <DataType>NUMBER(*)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="4104" parent="4017" name="SYS_C0010241">
-      <ObjectId>24197</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>FRIENDSHIP_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="4105" parent="4017" name="NO_DUPLICATES_FRIENDS">
-      <ObjectId>24198</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <index id="4094" parent="4013" name="NO_DUPLICATES_FRIENDS">
+      <ObjectId>25944</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>USER_ID1
 USER_ID2</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4106" parent="4017" name="SYS_C0010241">
+    <key id="4095" parent="4013" name="SYS_C0012414">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>FRIENDSHIP_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010241</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012414</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="4107" parent="4017" name="NO_DUPLICATES_FRIENDS">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <key id="4096" parent="4013" name="NO_DUPLICATES_FRIENDS">
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>USER_ID1
 USER_ID2</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>NO_DUPLICATES_FRIENDS</UnderlyingIndexName>
     </key>
-    <foreign-key id="4108" parent="4017" name="FK_FRIENDS_USERS1">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4097" parent="4013" name="FK_FRIENDS_USERS1">
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>USER_ID1</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_USERS</RefTableName>
-      <RefKeyName>SYS_C0010236</RefKeyName>
+      <RefKeyName>SYS_C0012409</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="4109" parent="4017" name="FK_FRIENDS_USERS2">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4098" parent="4013" name="FK_FRIENDS_USERS2">
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>USER_ID2</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_USERS</RefTableName>
-      <RefKeyName>SYS_C0010236</RefKeyName>
+      <RefKeyName>SYS_C0012409</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="4110" parent="4018" name="ITEM_ID">
+    <column id="4099" parent="4014" name="ITEM_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4111" parent="4018" name="OWNER_ID">
+    <column id="4100" parent="4014" name="OWNER_ID">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4112" parent="4018" name="BASE_LEVEL">
+    <column id="4101" parent="4014" name="BASE_LEVEL">
       <Position>3</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4113" parent="4018" name="CURRENT_DURABILITY">
+    <column id="4102" parent="4014" name="CURRENT_DURABILITY">
       <Position>4</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4114" parent="4018" name="MAXIMUM_DURABILITY">
+    <column id="4103" parent="4014" name="MAXIMUM_DURABILITY">
       <Position>5</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4115" parent="4018" name="EXPIRATION_DATE">
+    <column id="4104" parent="4014" name="EXPIRATION_DATE">
       <Position>6</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="4116" parent="4018" name="ITEM_TYPE">
+    <column id="4105" parent="4014" name="ITEM_TYPE">
       <Position>7</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4117" parent="4018" name="ITEM_RARITY">
+    <column id="4106" parent="4014" name="ITEM_RARITY">
       <Position>8</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4118" parent="4018" name="ITEM_MAGIC_TYPE">
+    <column id="4107" parent="4014" name="ITEM_MAGIC_TYPE">
       <Position>9</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4119" parent="4018" name="IS_EQUIPPED">
+    <column id="4108" parent="4014" name="IS_EQUIPPED">
       <Position>10</Position>
       <DataType>NUMBER(1 digit)|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
     </column>
-    <index id="4120" parent="4018" name="SYS_C0010273">
-      <ObjectId>24212</ObjectId>
+    <index id="4109" parent="4014" name="SYS_C0012442">
+      <ObjectId>25956</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>ITEM_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4121" parent="4018" name="SYS_C0010273">
+    <key id="4110" parent="4014" name="SYS_C0012442">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>ITEM_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010273</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012442</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="4122" parent="4018" name="FK_ITEMS_CHARACTERS">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4111" parent="4014" name="FK_ITEMS_CHARACTERS">
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>OWNER_ID</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_CHARACTERS</RefTableName>
-      <RefKeyName>SYS_C0010252</RefKeyName>
+      <RefKeyName>SYS_C0012422</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="4123" parent="4018" name="FK_ITEMS_ITEMS_TYPE">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4112" parent="4014" name="FK_ITEMS_ITEMS_TYPE">
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>ITEM_TYPE</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_ITEM_TYPES</RefTableName>
-      <RefKeyName>SYS_C0010259</RefKeyName>
+      <RefKeyName>SYS_C0012428</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="4124" parent="4018" name="FK_ITEMS_RARITY">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4113" parent="4014" name="FK_ITEMS_RARITY">
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>ITEM_RARITY</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_ITEM_RARITY</RefTableName>
-      <RefKeyName>SYS_C0010263</RefKeyName>
+      <RefKeyName>SYS_C0012432</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="4125" parent="4018" name="FK_ITEMS_MAGIC_TYPES">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4114" parent="4014" name="FK_ITEMS_MAGIC_TYPES">
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>ITEM_MAGIC_TYPE</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_MAGIC_TYPES</RefTableName>
-      <RefKeyName>SYS_C0010265</RefKeyName>
+      <RefKeyName>SYS_C0012434</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="4126" parent="4019" name="RARITY_ID">
+    <column id="4115" parent="4015" name="RARITY_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4127" parent="4019" name="RARITY_NAME">
+    <column id="4116" parent="4015" name="RARITY_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(200 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4128" parent="4019" name="RARITY_COLOR">
+    <column id="4117" parent="4015" name="RARITY_COLOR">
       <Position>3</Position>
       <DataType>VARCHAR2(200 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4129" parent="4019" name="STATS_NUMBER">
+    <column id="4118" parent="4015" name="STATS_NUMBER">
       <Position>4</Position>
       <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <index id="4130" parent="4019" name="SYS_C0010263">
-      <ObjectId>24208</ObjectId>
+    <index id="4119" parent="4015" name="SYS_C0012432">
+      <ObjectId>25952</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>RARITY_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4131" parent="4019" name="SYS_C0010263">
+    <key id="4120" parent="4015" name="SYS_C0012432">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>RARITY_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010263</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012432</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="4132" parent="4020" name="STAT_ID">
+    <column id="4121" parent="4016" name="ITEM_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4133" parent="4020" name="ITEM_ID">
+    <column id="4122" parent="4016" name="TYPE_ID">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4134" parent="4020" name="TYPE_ID">
+    <column id="4123" parent="4016" name="VALUE">
       <Position>3</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4135" parent="4020" name="VALUE">
-      <Position>4</Position>
-      <DataType>NUMBER(*)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="4136" parent="4020" name="SYS_C0010286">
-      <ObjectId>24217</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <index id="4124" parent="4016" name="PK_ITEM_STATS">
+      <ObjectId>25961</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
-      <ColNames>STAT_ID</ColNames>
+      <ColNames>ITEM_ID
+TYPE_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4137" parent="4020" name="SYS_C0010286">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
-      <ColNames>STAT_ID</ColNames>
+    <key id="4125" parent="4016" name="PK_ITEM_STATS">
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
+      <ColNames>ITEM_ID
+TYPE_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010286</UnderlyingIndexName>
+      <UnderlyingIndexName>PK_ITEM_STATS</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="4138" parent="4020" name="FK_ITEM_STATS_ITEMS">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4126" parent="4016" name="FK_ITEM_STATS_ITEMS">
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>ITEM_ID</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_ITEMS</RefTableName>
-      <RefKeyName>SYS_C0010273</RefKeyName>
+      <RefKeyName>SYS_C0012442</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="4139" parent="4020" name="FK_ITEM_STATS_STAT_TYPES">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4127" parent="4016" name="FK_ITEM_STATS_STAT_TYPES">
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>TYPE_ID</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_STAT_TYPES</RefTableName>
-      <RefKeyName>SYS_C0010280</RefKeyName>
+      <RefKeyName>SYS_C0012449</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="4140" parent="4021" name="TYPE_ID">
+    <column id="4128" parent="4017" name="TYPE_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4141" parent="4021" name="UTILITY_ID">
+    <column id="4129" parent="4017" name="UTILITY_ID">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4142" parent="4021" name="TYPE_NAME">
+    <column id="4130" parent="4017" name="TYPE_NAME">
       <Position>3</Position>
       <DataType>VARCHAR2(200 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="4143" parent="4021" name="SYS_C0010259">
-      <ObjectId>24206</ObjectId>
+    <index id="4131" parent="4017" name="SYS_C0012428">
+      <ObjectId>25950</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>TYPE_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4144" parent="4021" name="SYS_C0010259">
+    <key id="4132" parent="4017" name="SYS_C0012428">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>TYPE_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010259</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012428</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="4145" parent="4021" name="FK_ITEM_TYPES_UTILITY">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4133" parent="4017" name="FK_ITEM_TYPES_UTILITY">
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>UTILITY_ID</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_ITEM_UTILITIES</RefTableName>
-      <RefKeyName>SYS_C0010256</RefKeyName>
+      <RefKeyName>SYS_C0012425</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="4146" parent="4022" name="UTILITY_ID">
+    <column id="4134" parent="4018" name="UTILITY_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4147" parent="4022" name="UTILITY_NAME">
+    <column id="4135" parent="4018" name="UTILITY_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(200 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="4148" parent="4022" name="SYS_C0010256">
-      <ObjectId>24204</ObjectId>
+    <index id="4136" parent="4018" name="SYS_C0012425">
+      <ObjectId>25948</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>UTILITY_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4149" parent="4022" name="SYS_C0010256">
+    <key id="4137" parent="4018" name="SYS_C0012425">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>UTILITY_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010256</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012425</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="4150" parent="4023" name="MAGIC_ID">
+    <column id="4138" parent="4019" name="MAGIC_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4151" parent="4023" name="MAGIC_NAME">
+    <column id="4139" parent="4019" name="MAGIC_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(200 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="4152" parent="4023" name="SYS_C0010265">
-      <ObjectId>24210</ObjectId>
+    <index id="4140" parent="4019" name="SYS_C0012434">
+      <ObjectId>25954</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>MAGIC_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4153" parent="4023" name="SYS_C0010265">
+    <key id="4141" parent="4019" name="SYS_C0012434">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>MAGIC_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010265</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012434</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="4154" parent="4024" name="WEAKNESS_ID">
+    <column id="4142" parent="4020" name="WEAKNESS_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4155" parent="4024" name="WEAKNESS_OF">
+    <column id="4143" parent="4020" name="WEAKNESS_OF">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4156" parent="4024" name="WEAKNESS_TO">
+    <column id="4144" parent="4020" name="WEAKNESS_TO">
       <Position>3</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="4157" parent="4024" name="SYS_C0010297">
-      <ObjectId>24221</ObjectId>
+    <index id="4145" parent="4020" name="SYS_C0012460">
+      <ObjectId>25963</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>WEAKNESS_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="4158" parent="4024" name="NO_DUPLICATES_MAGIC_WEAKNESSES">
-      <ObjectId>24222</ObjectId>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <index id="4146" parent="4020" name="NO_DUPLICATES_MAGIC_WEAKNESSES">
+      <ObjectId>25964</ObjectId>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>WEAKNESS_OF
 WEAKNESS_TO</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4159" parent="4024" name="SYS_C0010297">
+    <key id="4147" parent="4020" name="SYS_C0012460">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>WEAKNESS_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010297</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012460</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="4160" parent="4024" name="NO_DUPLICATES_MAGIC_WEAKNESSES">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <key id="4148" parent="4020" name="NO_DUPLICATES_MAGIC_WEAKNESSES">
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>WEAKNESS_OF
 WEAKNESS_TO</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>NO_DUPLICATES_MAGIC_WEAKNESSES</UnderlyingIndexName>
     </key>
-    <foreign-key id="4161" parent="4024" name="FK_MAGIC_WEAK_MAGIC_TYPES1">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4149" parent="4020" name="FK_MAGIC_WEAK_MAGIC_TYPES1">
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>WEAKNESS_OF</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_MAGIC_TYPES</RefTableName>
-      <RefKeyName>SYS_C0010265</RefKeyName>
+      <RefKeyName>SYS_C0012434</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="4162" parent="4024" name="FK_MAGIC_WEAK_MAGIC_TYPES2">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4150" parent="4020" name="FK_MAGIC_WEAK_MAGIC_TYPES2">
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>WEAKNESS_TO</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_MAGIC_TYPES</RefTableName>
-      <RefKeyName>SYS_C0010265</RefKeyName>
+      <RefKeyName>SYS_C0012434</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="4163" parent="4025" name="TYPE_ID">
+    <column id="4151" parent="4021" name="TYPE_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4164" parent="4025" name="UTILITY_ID">
+    <column id="4152" parent="4021" name="UTILITY_ID">
       <Position>2</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4165" parent="4025" name="NAME">
+    <column id="4153" parent="4021" name="NAME">
       <Position>3</Position>
       <DataType>VARCHAR2(200 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4166" parent="4025" name="MIN_BASE_VALUE">
+    <column id="4154" parent="4021" name="MIN_BASE_VALUE">
       <Position>4</Position>
       <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <column id="4167" parent="4025" name="MAX_BASE_VALUE">
+    <column id="4155" parent="4021" name="MAX_BASE_VALUE">
       <Position>5</Position>
       <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <index id="4168" parent="4025" name="SYS_C0010280">
-      <ObjectId>24214</ObjectId>
+    <index id="4156" parent="4021" name="SYS_C0012449">
+      <ObjectId>25958</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>TYPE_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="4169" parent="4025" name="SYS_C0010281">
-      <ObjectId>24215</ObjectId>
+    <index id="4157" parent="4021" name="SYS_C0012450">
+      <ObjectId>25959</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:46</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>NAME</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4170" parent="4025" name="SYS_C0010280">
+    <key id="4158" parent="4021" name="SYS_C0012449">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>TYPE_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010280</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012449</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="4171" parent="4025" name="SYS_C0010281">
+    <key id="4159" parent="4021" name="SYS_C0012450">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>NAME</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010281</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012450</UnderlyingIndexName>
     </key>
-    <foreign-key id="4172" parent="4025" name="FK_STAT_TYPES_UTILITY">
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+    <foreign-key id="4160" parent="4021" name="FK_STAT_TYPES_UTILITY">
+      <ModifiedTimestamp>2019-03-28.00:19:46</ModifiedTimestamp>
       <ColNames>UTILITY_ID</ColNames>
       <RefSchemaName>STUDENT</RefSchemaName>
       <RefTableName>RPG_ITEM_UTILITIES</RefTableName>
-      <RefKeyName>SYS_C0010256</RefKeyName>
+      <RefKeyName>SYS_C0012425</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="4173" parent="4026" name="USER_ID">
+    <column id="4161" parent="4022" name="USER_ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4174" parent="4026" name="USERNAME">
+    <column id="4162" parent="4022" name="USERNAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4175" parent="4026" name="PASSWORD">
+    <column id="4163" parent="4022" name="PASSWORD">
       <Position>3</Position>
       <DataType>VARCHAR2(50 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4176" parent="4026" name="EMAIL">
+    <column id="4164" parent="4022" name="EMAIL">
       <Position>4</Position>
       <DataType>VARCHAR2(50 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="4177" parent="4026" name="SYS_C0010236">
-      <ObjectId>24193</ObjectId>
+    <index id="4165" parent="4022" name="SYS_C0012409">
+      <ObjectId>25939</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>USER_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="4178" parent="4026" name="SYS_C0010237">
-      <ObjectId>24194</ObjectId>
+    <index id="4166" parent="4022" name="SYS_C0012410">
+      <ObjectId>25940</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>USERNAME</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="4179" parent="4026" name="SYS_C0010238">
-      <ObjectId>24195</ObjectId>
+    <index id="4167" parent="4022" name="SYS_C0012411">
+      <ObjectId>25941</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2019-03-27.00:23:48</CreatedTimestamp>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <CreatedTimestamp>2019-03-28.00:19:45</CreatedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>EMAIL</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4180" parent="4026" name="SYS_C0010236">
+    <key id="4168" parent="4022" name="SYS_C0012409">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>USER_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010236</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012409</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <key id="4181" parent="4026" name="SYS_C0010237">
+    <key id="4169" parent="4022" name="SYS_C0012410">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>USERNAME</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010237</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012410</UnderlyingIndexName>
     </key>
-    <key id="4182" parent="4026" name="SYS_C0010238">
+    <key id="4170" parent="4022" name="SYS_C0012411">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2019-03-27.00:23:48</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-03-28.00:19:45</ModifiedTimestamp>
       <ColNames>EMAIL</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C0010238</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C0012411</UnderlyingIndexName>
     </key>
-    <column id="4183" parent="4027" name="ID">
+    <column id="4171" parent="4023" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4184" parent="4027" name="NR_MATRICOL">
+    <column id="4172" parent="4023" name="NR_MATRICOL">
       <Position>2</Position>
       <DataType>VARCHAR2(6 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4185" parent="4027" name="NUME">
+    <column id="4173" parent="4023" name="NUME">
       <Position>3</Position>
       <DataType>VARCHAR2(15 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4186" parent="4027" name="PRENUME">
+    <column id="4174" parent="4023" name="PRENUME">
       <Position>4</Position>
       <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="4187" parent="4027" name="AN">
+    <column id="4175" parent="4023" name="AN">
       <Position>5</Position>
       <DataType>NUMBER(1 digit)|0s</DataType>
     </column>
-    <column id="4188" parent="4027" name="GRUPA">
+    <column id="4176" parent="4023" name="GRUPA">
       <Position>6</Position>
       <DataType>CHAR(2 byte)|0s</DataType>
     </column>
-    <column id="4189" parent="4027" name="BURSA">
+    <column id="4177" parent="4023" name="BURSA">
       <Position>7</Position>
       <DataType>NUMBER(6,2 digit)|0s</DataType>
     </column>
-    <column id="4190" parent="4027" name="DATA_NASTERE">
+    <column id="4178" parent="4023" name="DATA_NASTERE">
       <Position>8</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="4191" parent="4027" name="EMAIL">
+    <column id="4179" parent="4023" name="EMAIL">
       <Position>9</Position>
       <DataType>VARCHAR2(40 byte)|0s</DataType>
     </column>
-    <column id="4192" parent="4027" name="CREATED_AT">
+    <column id="4180" parent="4023" name="CREATED_AT">
       <Position>10</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <column id="4193" parent="4027" name="UPDATED_AT">
+    <column id="4181" parent="4023" name="UPDATED_AT">
       <Position>11</Position>
       <DataType>DATE|0s</DataType>
     </column>
-    <index id="4194" parent="4027" name="SYS_C007291">
+    <index id="4182" parent="4023" name="SYS_C007291">
       <ObjectId>22285</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-03-24.17:02:42</CreatedTimestamp>
@@ -29135,7 +29069,7 @@ WEAKNESS_TO</ColNames>
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="4195" parent="4027" name="SYS_C007291">
+    <key id="4183" parent="4023" name="SYS_C007291">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-03-24.17:02:42</ModifiedTimestamp>
       <ColNames>ID</ColNames>
@@ -29143,13 +29077,37 @@ WEAKNESS_TO</ColNames>
       <UnderlyingIndexName>SYS_C007291</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <argument id="4196" parent="4029" name="NAME_WEAKNESS_OF">
+    <argument id="4184" parent="4025" name="NAME_WEAKNESS_OF">
       <Position>1</Position>
       <DataType>VARCHAR2|0s</DataType>
     </argument>
-    <argument id="4197" parent="4029" name="NAME_WEAKNESS_TO">
+    <argument id="4185" parent="4025" name="NAME_WEAKNESS_TO">
       <Position>2</Position>
       <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="4186" parent="4027">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="4187" parent="4029" name="P_OWNER_ID">
+      <Position>1</Position>
+      <DataType>NUMBER|0s</DataType>
+    </argument>
+    <argument id="4188" parent="4030" name="P_ITEM_ID">
+      <Position>1</Position>
+      <DataType>NUMBER|0s</DataType>
+    </argument>
+    <argument id="4189" parent="4030" name="P_ITEM_TYPE">
+      <Position>2</Position>
+      <DataType>NUMBER|0s</DataType>
+    </argument>
+    <argument id="4190" parent="4031">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="4191" parent="4031" name="STRING_LENGTH">
+      <Position>1</Position>
+      <DataType>NUMBER|0s</DataType>
     </argument>
   </database-model>
 </dataSource>

@@ -3,8 +3,6 @@ drop sequence rpg_users_seq;
 /
 drop sequence rpg_friends_seq;
 /
-drop sequence rpg_classes_seq;
-/
 drop sequence rpg_characters_seq;
 /
 drop sequence rpg_items_seq;
@@ -19,18 +17,12 @@ drop sequence rpg_magic_types_seq;
 /
 drop sequence rpg_stat_types_seq;
 /
-drop sequence rpg_item_stats_seq;
-/
-drop sequence rpg_class_stats_seq;
-/
 drop sequence rpg_magic_weaknesses_seq;
 /
 
 create sequence rpg_users_seq start with 1;
 /
 create sequence rpg_friends_seq start with 1;
-/
-create sequence rpg_classes_seq start with 1;
 /
 create sequence rpg_characters_seq start with 1;
 /
@@ -45,10 +37,6 @@ create sequence rpg_item_rarity_seq start with 1;
 create sequence rpg_magic_types_seq start with 1;
 /
 create sequence rpg_stat_types_seq start with 1;
-/
-create sequence rpg_item_stats_seq start with 1;
-/
-create sequence rpg_class_stats_seq start with 1;
 /
 create sequence rpg_magic_weaknesses_seq start with 1;
 /
@@ -233,6 +221,25 @@ END;
 
 -- select * from RPG_ITEM_RARITY;
 
+create or replace function generate_random_string(string_length number) return varchar2 as
+  letters_numbers varchar2(200) := 'abcdefghijklmnopqrstuvwxyz';
+
+  result varchar2(200);
+BEGIN
+  result := '';
+
+  for i in 1..string_length loop
+    result := result || substr(letters_numbers, DBMS_RANDOM.value(1, length(letters_numbers)), 1);
+  end loop;
+
+  return result;
+END;
+/
+
+-- =====================================================================================================================
+
+-- users, friends and characters:
+
 create or replace function generate_email return varchar2 as
   names_list arr_varchar2 := arr_varchar2('andrei', 'mihai', 'matei');
   providers_list arr_varchar2 := arr_varchar2('gmail', 'yahoo');
@@ -252,23 +259,11 @@ BEGIN
 
   return result;
 END;
+/
 
-select generate_email()
-from dual;
-
-create or replace function generate_random_string(string_length number) return varchar2 as
-  letters_numbers varchar2(200) := 'abcdefghijklmnopqrstuvwxyz';
-
-  result varchar2(200);
-BEGIN
-  result := '';
-
-  for i in 1..string_length loop
-    result := result || substr(letters_numbers, DBMS_RANDOM.value(1, length(letters_numbers)), 1);
-  end loop;
-
-  return result;
-END;
+-- select generate_email()
+-- from dual;
+/
 
 -- select generate_random_string(50)
 -- from dual;
@@ -293,7 +288,7 @@ begin
     generate_user();
   end loop;
 end;
-
+/
 -- select * from RPG_USERS;
 
 create or replace procedure generate_friendships is
@@ -325,49 +320,34 @@ BEGIN
 END;
 
 begin
-  for i in 0..1000 loop
+  for i in 1..100 loop -- mai pune 000
     generate_friendships();
   end loop;
 end;
-
+/
 -- select count(*)
 -- from RPG_FRIENDS;
 --
 -- select *
 -- from RPG_FRIENDS;
 
-begin
-  insert into RPG_CLASSES values (rpg_classes_seq.nextval, 'archer');
-  insert into RPG_CLASSES values (rpg_classes_seq.nextval, 'warrior');
-  insert into RPG_CLASSES values (rpg_classes_seq.nextval, 'assassin');
-  insert into RPG_CLASSES values (rpg_classes_seq.nextval, 'wizard');
-end;
-
 create or replace procedure generate_characters is
   cursor c is select USER_ID from RPG_USERS;
-  class_count number;
 
   number_characters number;
   name varchar2(200);
   character_level number;
-  classs number;
   gold number;
 BEGIN
-  select count(*)
-  into class_count
-  from rpg_classes;
-
   for row in c loop
     number_characters := DBMS_RANDOM.value(2, 7);
     for i in 0..number_characters loop
       name := generate_random_string(DBMS_RANDOM.value(15, 20));
       character_level := DBMS_RANDOM.value(1, 100);
-      classs := trunc(DBMS_RANDOM.value(1, class_count));
---       dbms_output.put_line(classs);
       gold := DBMS_RANDOM.value(1, 342512);
 
       insert into RPG_CHARACTERS
-      values(RPG_CHARACTERS_SEQ.nextval, row.USER_ID, name, character_level, classs, gold, null);
+      values(RPG_CHARACTERS_SEQ.nextval, row.USER_ID, name, character_level, gold, null);
     end loop;
   end loop;
 END;
@@ -375,24 +355,111 @@ END;
 begin
   generate_characters();
 end;
+/
 
 -- =====================================================================================================================
 
--- class stats:
-drop sequence RPG_CLASS_STATS_SEQ;
+-- items and item stats:
+drop sequence RPG_ITEMS_SEQ;
 /
-create sequence RPG_CLASS_STATS_SEQ start with 1;
+create sequence RPG_ITEMS_SEQ start with 1;
 /
-DECLARE
-  cursor classes_list is select CLASS_ID from RPG_CLASSES;
-  cursor stats_list is select type_id from RPG_STAT_TYPES;
-BEGIN
-  -- initialization
-  for class in classes_list loop
-    for stat in stats_list loop
-      insert into RPG_CLASS_STATS values (RPG_CLASS_STATS_SEQ.nextval,class.CLASS_ID,stat.TYPE_ID,0);
+drop sequence RPG_ITEM_STATS_SEQ;
+/
+create sequence RPG_ITEM_STATS_SEQ start with 1;
+/
+
+create or replace procedure generate_random_item_stat(p_item_id in number, p_item_type in number) as
+  p_item_utility number;
+  p_any_utility number;
+  p_num_options number;
+  p_option number;
+  p_stat_type_id number;
+
+  p_min number;
+  p_max number;
+begin
+  select UTILITY_ID into p_item_utility from RPG_ITEM_TYPES where p_item_type = TYPE_ID;
+  select UTILITY_ID into p_any_utility from RPG_ITEM_UTILITIES where UTILITY_NAME = 'any';
+  if ( p_item_utility = p_any_utility) then
+    select count(*) into p_num_options
+    from rpg_stat_types;
+
+    p_option := trunc(DBMS_RANDOM.value(1,p_num_options + 1));
+
+    select TYPE_ID,MIN_BASE_VALUE, MAX_BASE_VALUE into p_stat_type_id, p_min, p_max
+    from (
+      select i.*, ROWNUM as R
+      from (select * from rpg_stat_types) i
+      )
+    where R = p_option;
+  else
+    select count(*) into p_num_options
+    from rpg_stat_types
+    where p_item_utility = UTILITY_ID;
+    p_option := trunc(DBMS_RANDOM.value(1,p_num_options + 1));
+
+    select TYPE_ID,MIN_BASE_VALUE, MAX_BASE_VALUE into p_stat_type_id, p_min, p_max
+    from (
+      select i.*, ROWNUM as R
+      from (select * from rpg_stat_types where p_item_utility = UTILITY_ID) i
+      )
+    where R = p_option;
+  end if;
+  insert into rpg_item_stats values (p_item_id,p_stat_type_id,round(DBMS_RANDOM.value(p_min,p_max),2));
+end;
+/
+
+create or replace procedure generate_random_item(p_owner_id in rpg_characters.character_id%type) as
+  p_base_level rpg_items.base_level%type;
+  p_item_type rpg_items.ITEM_TYPE%type;
+  p_item_rarity rpg_items.ITEM_RARITY%type;
+  p_item_magic_type rpg_items.ITEM_MAGIC_TYPE%type;
+  p_expiration_date rpg_items.EXPIRATION_DATE%type;
+  p_durability rpg_items.MAXIMUM_DURABILITY%type;
+  p_stat_num rpg_item_rarity.STATS_NUMBER%type;
+begin
+  -- item data without the stats
+  p_base_level := trunc(DBMS_RANDOM.value(1,101));
+  p_item_type := trunc(DBMS_RANDOM.value(1, rpg_item_types_seq.currval + 1));
+  p_item_rarity := trunc(DBMS_RANDOM.value(1, rpg_item_rarity_seq.currval + 1));
+  p_item_magic_type := trunc(DBMS_RANDOM.value(1, rpg_magic_types_seq.currval + 1));
+  if ( DBMS_RANDOM.value(0,1) <= 0.9 ) then
+    p_expiration_date := sysdate + trunc(DBMS_RANDOM.value(1,31));
+  else
+    p_expiration_date := null;
+  end if;
+  p_durability := 10 * (p_base_level + trunc(DBMS_RANDOM.value(1,10)));
+
+  insert into RPG_ITEMS values (rpg_items_seq.nextval,p_owner_id,p_base_level,p_durability,p_durability,p_expiration_date,p_item_type,
+                                p_item_rarity,p_item_magic_type,0);
+  -- item stats
+  select STATS_NUMBER into p_stat_num from RPG_ITEM_RARITY where p_item_rarity = RARITY_ID;
+  for i in 0..p_stat_num loop
+    generate_random_item_stat(rpg_items_seq.currval, p_item_type);
+  end loop;
+end;
+/
+
+-- insert 20-30 items for every person
+declare
+ p_num_characters number;
+ cursor characters_cursor is select CHARACTER_ID from RPG_CHARACTERS;
+begin
+ for row in characters_cursor loop
+   for i in 1.. DBMS_RANDOM.value(10,20) loop
+      generate_random_item(row.CHARACTER_ID);
     end loop;
   end loop;
-
-END;
+end;
 /
+
+begin
+  generate_random_item(1002);
+end;
+
+select count(*) from RPG_CHARACTERS;
+select count(*) from rpg_items;
+select * from rpg_item_stats;
+
+-- select count(*) from rpg_item_stats;

@@ -2,8 +2,6 @@ DROP TABLE rpg_users CASCADE CONSTRAINTS
 /
 DROP TABLE rpg_friends CASCADE CONSTRAINTS
 /
-DROP TABLE rpg_classes CASCADE CONSTRAINTS
-/
 DROP TABLE rpg_characters CASCADE CONSTRAINTS
 /
 DROP TABLE rpg_items CASCADE CONSTRAINTS
@@ -19,8 +17,6 @@ DROP TABLE rpg_magic_types CASCADE CONSTRAINTS
 DROP TABLE rpg_stat_types CASCADE CONSTRAINTS
 /
 DROP TABLE rpg_item_stats CASCADE CONSTRAINTS
-/
-DROP TABLE rpg_class_stats CASCADE CONSTRAINTS
 /
 DROP TABLE rpg_magic_weaknesses CASCADE CONSTRAINTS
 /
@@ -48,26 +44,16 @@ create table rpg_friends (
 );
 /
 
-create table rpg_classes (
-  class_id number primary key,
-  class_name varchar2(50) not null
-);
-/
-
 create table rpg_characters (
   character_id number primary key,
   user_id number not null,
   name varchar(20) not null,
   character_level number not null,
-  class_id number not null,
   gold number not null,
   deleted_at date,
   constraint fk_characters_users
     foreign key (user_id)
-    references rpg_users(user_id),
-  constraint fk_characters_class
-    foreign key (class_id)
-    references rpg_classes(class_id)
+    references rpg_users(user_id)
 );
 /
 
@@ -140,28 +126,15 @@ create table rpg_stat_types (
 /
 
 create table rpg_item_stats (
-  stat_id number primary key,
   item_id number not null,
   type_id number not null,
   value number not null,
+  constraint pk_item_stats
+    primary key (item_id,type_id),
   constraint fk_item_stats_items
     foreign key (item_id)
     references rpg_items(item_id),
   constraint fk_item_stats_stat_types
-    foreign key (type_id)
-    references rpg_stat_types(type_id)
-);
-/
-
-create table rpg_class_stats (
-  stat_id number primary key,
-  class_id number not null,
-  type_id number not null,
-  value number not null,
-  constraint fk_class_stats_classes
-    foreign key (class_id)
-    references rpg_classes(class_id),
-  constraint fk_class_stats_stat_types
     foreign key (type_id)
     references rpg_stat_types(type_id)
 );
