@@ -369,48 +369,8 @@ drop sequence RPG_ITEM_STATS_SEQ;
 create sequence RPG_ITEM_STATS_SEQ start with 1;
 /
 
-create or replace procedure generate_random_item_stat(p_item_id in number, p_item_type in number) as
-  p_item_utility number;
-  p_any_utility number;
-  p_num_options number;
-  p_option number;
-  p_stat_type_id number;
-
-  p_min number;
-  p_max number;
-begin
-  select UTILITY_ID into p_item_utility from RPG_ITEM_TYPES where p_item_type = TYPE_ID;
-  select UTILITY_ID into p_any_utility from RPG_ITEM_UTILITIES where UTILITY_NAME = 'any';
-  if ( p_item_utility = p_any_utility) then
-    select count(*) into p_num_options
-    from rpg_stat_types;
-
-    p_option := trunc(DBMS_RANDOM.value(1,p_num_options + 1));
-
-    select TYPE_ID,MIN_BASE_VALUE, MAX_BASE_VALUE into p_stat_type_id, p_min, p_max
-    from (
-      select i.*, ROWNUM as R
-      from (select * from rpg_stat_types) i
-      )
-    where R = p_option;
-  else
-    select count(*) into p_num_options
-    from rpg_stat_types
-    where p_item_utility = UTILITY_ID;
-    p_option := trunc(DBMS_RANDOM.value(1,p_num_options + 1));
-
-    select TYPE_ID,MIN_BASE_VALUE, MAX_BASE_VALUE into p_stat_type_id, p_min, p_max
-    from (
-      select i.*, ROWNUM as R
-      from (select * from rpg_stat_types where p_item_utility = UTILITY_ID) i
-      )
-    where R = p_option;
-  end if;
-  insert into rpg_item_stats values (p_item_id,p_stat_type_id,round(DBMS_RANDOM.value(p_min,p_max),2));
-end;
-/
-
 create or replace procedure generate_random_item(p_owner_id in rpg_characters.character_id%type) as
+  -- for item initialisation
   p_base_level rpg_items.base_level%type;
   p_item_type rpg_items.ITEM_TYPE%type;
   p_item_rarity rpg_items.ITEM_RARITY%type;
@@ -418,6 +378,19 @@ create or replace procedure generate_random_item(p_owner_id in rpg_characters.ch
   p_expiration_date rpg_items.EXPIRATION_DATE%type;
   p_durability rpg_items.MAXIMUM_DURABILITY%type;
   p_stat_num rpg_item_rarity.STATS_NUMBER%type;
+
+  -- for stats initialisation
+  type arr_stat_types is table of rpg_stat_types.TYPE_ID%type;
+
+  stat_types arr_stat_types;
+
+  p_item_utility number;
+  p_any_utility number;
+  p_num_options number;
+  p_option number;
+
+  p_min number;
+  p_max number;
 begin
   -- item data without the stats
   p_base_level := trunc(DBMS_RANDOM.value(1,101));
@@ -434,32 +407,60 @@ begin
   insert into RPG_ITEMS values (rpg_items_seq.nextval,p_owner_id,p_base_level,p_durability,p_durability,p_expiration_date,p_item_type,
                                 p_item_rarity,p_item_magic_type,0);
   -- item stats
+
+  select UTILITY_ID into p_item_utility from RPG_ITEM_TYPES where p_item_type = TYPE_ID;
+  select UTILITY_ID into p_any_utility from RPG_ITEM_UTILITIES where UTILITY_NAME = 'any';
+  if ( p_item_utility = p_any_utility) then
+    select TYPE_ID
+    bulk collect into stat_types
+    from RPG_STAT_TYPES;
+  else
+    select TYPE_ID
+    bulk collect into stat_types
+    from RPG_STAT_TYPES
+    where p_item_utility = UTILITY_ID;
+  end if;
+    DBMS_OUTPUT.PUT_LINE(p_item_utility);
   select STATS_NUMBER into p_stat_num from RPG_ITEM_RARITY where p_item_rarity = RARITY_ID;
   for i in 0..p_stat_num loop
-    generate_random_item_stat(rpg_items_seq.currval, p_item_type);
+    p_num_options := stat_types.COUNT;
+    loop
+      p_option := trunc(DBMS_RANDOM.value(1,p_num_options + 1));
+      exit when stat_types.exists(p_option);
+    end loop;
+
+    select MIN_BASE_VALUE, MAX_BASE_VALUE into p_min , p_max
+    from RPG_STAT_TYPES
+    where p_option = TYPE_ID;
+
+    insert into rpg_item_stats values (rpg_items_seq.currval,p_option,round(DBMS_RANDOM.value(p_min,p_max),2));
+
+    stat_types.delete(p_option);
   end loop;
 end;
 /
 
 -- insert 20-30 items for every person
 declare
- p_num_characters number;
+ p_num_items number;
  cursor characters_cursor is select CHARACTER_ID from RPG_CHARACTERS;
 begin
- for row in characters_cursor loop
-   for i in 1.. DBMS_RANDOM.value(10,20) loop
-      generate_random_item(row.CHARACTER_ID);
+ for j in 1.. 50 loop
+   p_num_items := 1;--trunc(DBMS_RANDOM.value(5,10));
+   for i in 1.. p_num_items loop
+      generate_random_item(j);
     end loop;
   end loop;
 end;
 /
 
 begin
-  generate_random_item(1002);
+  generate_random_item(1);
 end;
 
 select count(*) from RPG_CHARACTERS;
-select count(*) from rpg_items;
-select * from rpg_item_stats;
+select * from rpg_items;
+select rpg_item_stats.*, NAME from rpg_item_stats join RPG_STAT_TYPES on RPG_ITEM_STATS.TYPE_ID = RPG_STAT_TYPES.TYPE_ID
+where ITEM_ID = &item_id;
 
 -- select count(*) from rpg_item_stats;
