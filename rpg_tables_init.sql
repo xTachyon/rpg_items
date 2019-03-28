@@ -691,4 +691,4 @@ select rmt1.magic_name as "Weak_Magic", rmt1.magic_id as "Weak_Magic_ID", rmt2.m
 from rpg_magic_types rmt1 join rpg_magic_weaknesses rmw on rmt1.magic_id = rmw.weakness_of
   join rpg_magic_types rmt2 on rmt2.magic_id = rmw.WEAKNESS_TO;
 
-select * from rpg_magic_weaknesses_view;
+-- select * from rpg_magic_weaknesses_view;
