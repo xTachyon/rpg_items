@@ -1,3 +1,5 @@
+-- Made by Damian Andrei and Lipan Radu-Matei, A1
+
 DROP TABLE rpg_users CASCADE CONSTRAINTS
 /
 DROP TABLE rpg_friends CASCADE CONSTRAINTS
