@@ -29,6 +29,12 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="STUDENT: schema" type="3abd1b6a:OraImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="STUDENT: schema" type="3abd1b6a:OraImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -40,17 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="619" column="32" lean-forward="true" selection-start-line="619" selection-start-column="32" selection-end-line="619" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpg_create.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="373">
+              <caret line="668" column="85" selection-start-line="668" selection-start-column="85" selection-end-line="668" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -73,9 +70,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="366" />
-    <option name="y" value="-9" />
-    <option name="width" value="979" />
+    <option name="x" value="257" />
+    <option name="y" value="-18" />
+    <option name="width" value="980" />
     <option name="height" value="880" />
   </component>
   <component name="ProjectView">
@@ -88,7 +85,7 @@
     <property name="DBE.Init.BalloonShown" value="true" />
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="GoToClass.toSaveIncludeLibraries" value="true" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../script_populare_student.sql" />
     <property name="settings.editor.selected.configurable" value="database.main2" />
   </component>
@@ -115,15 +112,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Database" order="0" sideWeight="0.49840257" visible="true" weight="0.11247335" />
+      <window_info active="true" content_ui="combo" id="Database" order="0" sideWeight="0.49840257" visible="true" weight="0.17910448" />
       <window_info id="Favorites" order="1" sideWeight="0.50159746" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="5" visible="true" weight="0.24008575" />
+      <window_info anchor="bottom" id="Database Console" order="5" weight="0.5026795" />
       <window_info anchor="bottom" id="Database Changes" order="6" weight="0.3290461" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
@@ -277,17 +275,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="619" column="32" lean-forward="true" selection-start-line="619" selection-start-column="32" selection-end-line="619" selection-end-column="32" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEM_UTILITIES">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rpg_create.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="3015">
+          <caret line="478" column="2" selection-start-line="478" selection-start-column="2" selection-end-line="478" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/std (1).sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="791" column="7" lean-forward="true" selection-start-line="791" selection-start-column="7" selection-end-line="791" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="668" column="85" selection-start-line="668" selection-start-column="85" selection-end-line="668" selection-end-column="85" />
         </state>
       </provider>
     </entry>

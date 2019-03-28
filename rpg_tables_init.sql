@@ -633,8 +633,62 @@ end; -- ~ 6 min
 -- end;
 --
 -- select count(*) from RPG_CHARACTERS;
-select count(*) from rpg_items; -- ~ 1 mil
-select count(*) from RPG_ITEM_STATS; -- ~ 5 mil
-select UTILITY_ID, count(*) from rpg_items join RPG_ITEM_TYPES on RPG_ITEMS.ITEM_TYPE = RPG_ITEM_TYPES.TYPE_ID group by UTILITY_ID;
-select rpg_item_stats.*, NAME, UTILITY_ID from rpg_item_stats join RPG_STAT_TYPES on RPG_ITEM_STATS.TYPE_ID = RPG_STAT_TYPES.TYPE_ID
-where ITEM_ID between &item_id and &item_id2;
+-- select count(*) from rpg_items; -- ~ 1 mil
+-- select count(*) from RPG_ITEM_STATS; -- ~ 5 mil
+-- select UTILITY_ID, count(*) from rpg_items join RPG_ITEM_TYPES on RPG_ITEMS.ITEM_TYPE = RPG_ITEM_TYPES.TYPE_ID group by UTILITY_ID;
+-- select rpg_item_stats.*, NAME, UTILITY_ID from rpg_item_stats join RPG_STAT_TYPES on RPG_ITEM_STATS.TYPE_ID = RPG_STAT_TYPES.TYPE_ID
+-- where ITEM_ID = &item_id;
+
+
+-- the indexes we plan to use
+create index RPG_ITEM_STATS_ITEM_INDEX on RPG_ITEM_STATS(item_id);
+/
+drop index RPG_ITEM_STATS_ITEM_INDEX;
+/
+create index RPG_ITEMS_OWNER_INDEX on RPG_ITEMS(owner_id);
+/
+drop index RPG_ITEMS_OWNER_INDEX;
+/
+create index RPG_CHARACTERS_USER_INDEX on rpg_characters(user_id);
+/
+drop index RPG_CHARACTERS_USER_INDEX;
+/
+
+-- select rpg_item_stats.*
+-- from RPG_ITEMS join rpg_item_stats on rpg_items.item_id = rpg_item_stats.item_id
+--   join rpg_characters on rpg_items.owner_id = rpg_characters.character_id
+--   join rpg_users on rpg_characters.user_id = rpg_users.user_id
+-- where rpg_users.user_id = &user;
+
+
+-- table views for human readability
+
+create or replace view rpg_items_view as
+select item_id,owner_id,base_level,current_durability,maximum_durability,expiration_date,type_name,utility_name,rarity_name,rarity_color,magic_name
+from rpg_items join rpg_item_types on rpg_items.item_type = rpg_item_types.type_id
+  join rpg_item_utilities on rpg_item_types.utility_id = rpg_item_utilities.utility_id
+  join rpg_item_rarity on rpg_items.item_rarity = rpg_item_rarity.rarity_id
+  join rpg_magic_types on rpg_items.item_magic_type = rpg_magic_types.magic_id;
+
+-- select * from rpg_items_view;
+
+create or replace  view rpg_stats_view as
+select item_id, name, utility_name, rpg_item_stats.value
+from rpg_item_stats join rpg_stat_types on rpg_item_stats.type_id = rpg_stat_types.type_id
+  join rpg_item_utilities on rpg_stat_types.utility_id = rpg_item_utilities.utility_id;
+
+-- select * from rpg_items_view join rpg_stats_view on rpg_items_view.item_id = rpg_stats_view.item_id;
+
+create or replace view rpg_friends_view as
+select ru1.user_id as "User_ID1",ru1.username as "User1", ru2.user_id as "User_ID2", ru2.username as "User2"
+from rpg_users ru1 join rpg_friends rf on ru1.user_id = rf.user_id1
+  join rpg_users ru2 on ru2.user_id = rf.user_id2;
+
+-- select * from rpg_friends_view;
+
+create or replace view rpg_magic_weaknesses_view as
+select rmt1.magic_name as "Weak_Magic", rmt1.magic_id as "Weak_Magic_ID", rmt2.magic_name as "Strong_Magic", rmt1.magic_id as "Strong_Magic_ID"
+from rpg_magic_types rmt1 join rpg_magic_weaknesses rmw on rmt1.magic_id = rmw.weakness_of
+  join rpg_magic_types rmt2 on rmt2.magic_id = rmw.WEAKNESS_TO;
+
+select * from rpg_magic_weaknesses_view;
