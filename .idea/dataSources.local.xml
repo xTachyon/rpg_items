@@ -9,7 +9,7 @@
       <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>STUDENT</user-name>
-      <introspection-schemas>*:@,PUBLIC</introspection-schemas>
+      <introspection-schemas>*:@,STUDENT</introspection-schemas>
     </data-source>
   </component>
 </project>
