@@ -666,7 +666,7 @@ drop index RPG_CHARACTERS_USER_INDEX;
 -- table views for human readability
 
 create or replace view rpg_items_view as
-select item_id,owner_id,base_level,current_durability,maximum_durability,expiration_date,type_name,utility_name,rarity_name,rarity_color,magic_name
+select item_id,owner_id,base_level,current_durability,maximum_durability,expiration_date,type_name,utility_name,rarity_name,rarity_color,magic_name,is_equipped
 from rpg_items join rpg_item_types on rpg_items.item_type = rpg_item_types.type_id
   join rpg_item_utilities on rpg_item_types.utility_id = rpg_item_utilities.utility_id
   join rpg_item_rarity on rpg_items.item_rarity = rpg_item_rarity.rarity_id
@@ -675,11 +675,11 @@ from rpg_items join rpg_item_types on rpg_items.item_type = rpg_item_types.type_
 -- select * from rpg_items_view;
 
 create or replace  view rpg_stats_view as
-select item_id, name, utility_name, rpg_item_stats.value
+select item_id, rpg_item_stats.type_id, name, rpg_item_utilities.utility_id, utility_name, rpg_item_stats.value
 from rpg_item_stats join rpg_stat_types on rpg_item_stats.type_id = rpg_stat_types.type_id
   join rpg_item_utilities on rpg_stat_types.utility_id = rpg_item_utilities.utility_id;
 
--- select * from rpg_items_view join rpg_stats_view on rpg_items_view.item_id = rpg_stats_view.item_id;
+select * from rpg_items_view join rpg_stats_view on rpg_items_view.item_id = rpg_stats_view.item_id;
 
 create or replace view rpg_friends_view as
 select ru1.user_id as "User_ID1",ru1.username as "User1", ru2.user_id as "User_ID2", ru2.username as "User2"
