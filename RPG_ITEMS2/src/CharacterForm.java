@@ -10,7 +10,6 @@ import java.awt.event.ActionListener;
 public class CharacterForm extends JFrame{
     private JTable itemsJTable;
     private JTable equipedItemsJTable;
-    private JList statsJList;
     private JButton backButton;
     private JButton equipButton;
     private JButton buyButton;
@@ -22,6 +21,8 @@ public class CharacterForm extends JFrame{
     private JScrollPane equipedItemsScrollPanel;
     private JPanel panel;
     private JTextField buyRarityTExtField;
+    private JTextArea statsTextArea;
+    private JScrollPane statsJScrollPanel;
 
     private CharacterController characterController;
 
@@ -31,6 +32,8 @@ public class CharacterForm extends JFrame{
         setSize(1600,800);
 
         add(panel);
+        statsTextArea.setText(characterController.loadCharacterStats());
+
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -79,10 +82,7 @@ public class CharacterForm extends JFrame{
         compareItemsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(itemsJTable.getSelectedRow()!= -1) {
-                    characterController.compare
-                            (Integer.parseInt(itemsJTable.getValueAt(itemsJTable.getSelectedRow(),0).toString()));
-                }
+                characterController.compare();
             }
         });
     }
@@ -96,6 +96,7 @@ public class CharacterForm extends JFrame{
         array = characterController.loadEquipedItems();
         equipedItemsJTable = UtilsForms.loadJTable(equipedItemsJTable, array, jTableColumnNames,true);
         modify_table_aspect(equipedItemsJTable);
+        statsTextArea.setText(characterController.loadCharacterStats());
     }
 
     private void createUIComponents() {
@@ -106,6 +107,8 @@ public class CharacterForm extends JFrame{
         array = characterController.loadEquipedItems();
         equipedItemsJTable = UtilsForms.loadJTable(equipedItemsJTable, array, jTableColumnNames,false);
         modify_table_aspect(equipedItemsJTable);
+        statsTextArea = new JTextArea(30,30);
+        statsTextArea.setEditable(false);
     }
 
     private void modify_table_aspect(JTable jTable){

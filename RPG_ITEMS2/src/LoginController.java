@@ -6,10 +6,9 @@ public class LoginController extends Controller{
 
     public void login(String username,String password){
         try{
-            CallableStatement cstmt = connection.prepareCall("{? = call user_login(?,?)}");
+            CallableStatement cstmt = connection.prepareCall("{? = call rpg_login.user_login(?,'" + password + "')}");
             cstmt.registerOutParameter(1, Types.VARCHAR);
             cstmt.setString(2, username);
-            cstmt.setString(3, password);
             cstmt.execute();
             int userId = cstmt.getInt(1);
             loadCharacterSelect(userId);
@@ -17,6 +16,9 @@ public class LoginController extends Controller{
         catch (SQLException e){
             if(e.getErrorCode() > 20000){
                 JOptionPane.showMessageDialog(null,e.getMessage());
+            }
+            else {
+                System.err.println(e.getMessage());
             }
         }
     }

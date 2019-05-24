@@ -3,8 +3,10 @@ import oracle.jdbc.OracleTypes;
 import oracle.sql.ARRAY;
 
 import javax.swing.*;
+import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Types;
 
 public class CharacterController extends Controller {
     private int userId;
@@ -31,7 +33,7 @@ public class CharacterController extends Controller {
 
     public ARRAY loadItems(){
         try{
-            OracleCallableStatement ocstmt = (OracleCallableStatement) connection.prepareCall("{ call get_items(?,?,?) }");
+            OracleCallableStatement ocstmt = (OracleCallableStatement) connection.prepareCall("{ call rpg_character.get_items(?,?,?) }");
             ocstmt.setInt(1, characterId);
             ocstmt.registerOutParameter(2, OracleTypes.ARRAY,"ITEM_LIST");
             ocstmt.setInt(3,0);
@@ -52,7 +54,7 @@ public class CharacterController extends Controller {
 
     public ARRAY loadEquipedItems(){
         try{
-            OracleCallableStatement ocstmt = (OracleCallableStatement) connection.prepareCall("{ call get_items(?,?,?) }");
+            OracleCallableStatement ocstmt = (OracleCallableStatement) connection.prepareCall("{ call rpg_character.get_items(?,?,?) }");
             ocstmt.setInt(1, characterId);
             ocstmt.registerOutParameter(2,OracleTypes.ARRAY,"ITEM_LIST");
             ocstmt.setInt(3,1);
@@ -71,9 +73,29 @@ public class CharacterController extends Controller {
         return null;
     }
 
+    public String loadCharacterStats(){
+        String output="";
+        try{
+            CallableStatement cstmt = connection.prepareCall("{? = call rpg_character.character_stats_to_string(?)}");
+            cstmt.registerOutParameter(1, Types.VARCHAR);
+            cstmt.setInt(2,characterId);
+            cstmt.execute();
+            output = cstmt.getString(1);
+        }
+        catch (SQLException e){
+            if(e.getErrorCode() > 20000){
+                JOptionPane.showMessageDialog(null,e.getMessage());
+            }
+            else{
+                System.err.println(e);
+            }
+        }
+        return output;
+    }
+
     public void equip(int itemId) {
         try{
-            PreparedStatement pstmt = connection.prepareCall("begin equip_item(?,?); end;");
+            PreparedStatement pstmt = connection.prepareCall("begin rpg_character.equip_item(?,?); end;");
             pstmt.setInt(1,characterId);
             pstmt.setInt(2,itemId);
             pstmt.execute();
@@ -92,7 +114,7 @@ public class CharacterController extends Controller {
 
     public void sell(int itemId) {
         try{
-            PreparedStatement pstmt = connection.prepareCall("begin sell_item(?); end;");
+            PreparedStatement pstmt = connection.prepareCall("begin rpg_character.sell_item(?); end;");
             pstmt.setInt(1,itemId);
             pstmt.execute();
             connection.commit();
@@ -110,7 +132,7 @@ public class CharacterController extends Controller {
 
     public void update(int itemId) {
         try{
-            PreparedStatement pstmt = connection.prepareCall("begin update_item(?); end;");
+            PreparedStatement pstmt = connection.prepareCall("begin rpg_character.update_item(?); end;");
             pstmt.setInt(1,itemId);
             pstmt.execute();
             connection.commit();
@@ -128,7 +150,7 @@ public class CharacterController extends Controller {
 
     public void buy(String rarity) {
         try{
-            PreparedStatement pstmt = connection.prepareCall("begin buy_item(?,?); end;");
+            PreparedStatement pstmt = connection.prepareCall("begin rpg_character.buy_item(?,?); end;");
             pstmt.setInt(1,characterId);
             pstmt.setString(2,rarity);
             pstmt.execute();
@@ -145,7 +167,16 @@ public class CharacterController extends Controller {
         ((CharacterForm)getForm()).reload_tables();
     }
 
-    public void compare(int itemId) {
-
+    public void compare() {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                CompareItemsController compareItemsController = new CompareItemsController(characterId);
+                CompareItemsForm compareItemsForm = new CompareItemsForm(compareItemsController);
+                compareItemsController.setForm(compareItemsForm);
+                compareItemsForm.setVisible(true);
+                compareItemsForm.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            }
+        });
     }
 }

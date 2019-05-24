@@ -49,6 +49,12 @@ public class CharacterSelectForm extends JFrame {
                 }
             }
         });
+        friendsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                characterSelectController.loadFriendsScene();
+            }
+        });
     }
 
     public void reload_table(){

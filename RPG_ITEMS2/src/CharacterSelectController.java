@@ -13,7 +13,7 @@ public class CharacterSelectController extends Controller{
 
     public ARRAY loadCharacters(){
         try{
-            OracleCallableStatement ocstmt = (OracleCallableStatement) connection.prepareCall("{ call get_characters(?,?) }");
+            OracleCallableStatement ocstmt = (OracleCallableStatement) connection.prepareCall("{ call rpg_character_select.get_characters(?,?) }");
             ocstmt.setInt(1, userId);
             ocstmt.registerOutParameter(2,OracleTypes.ARRAY,"CHARACTER_LIST");
             ocstmt.execute();
@@ -33,7 +33,7 @@ public class CharacterSelectController extends Controller{
 
     public void deleteCharacter(int characterId) {
         try{
-            PreparedStatement pstmt = connection.prepareCall("begin delete_character(?); end;");
+            PreparedStatement pstmt = connection.prepareCall("begin rpg_character_select.delete_character(?); end;");
             pstmt.setInt(1,characterId);
             pstmt.execute();
             connection.commit();
@@ -51,7 +51,7 @@ public class CharacterSelectController extends Controller{
 
     public void restoreCharacter(int characterId) {
         try{
-            PreparedStatement pstmt = connection.prepareCall("begin restore_character(?); end;");
+            PreparedStatement pstmt = connection.prepareCall("begin rpg_character_select.restore_character(?); end;");
             pstmt.setInt(1,characterId);
             pstmt.execute();
             connection.commit();
@@ -76,6 +76,20 @@ public class CharacterSelectController extends Controller{
                 characterController.setForm(characterForm);
                 characterForm.setVisible(true);
                 characterForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            }
+        });
+        getForm().dispose();
+    }
+
+    public void loadFriendsScene() {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                FriendsController friendsController = new FriendsController(userId);
+                FriendsForm friendsForm = new FriendsForm(friendsController);
+                friendsController.setForm(friendsForm);
+                friendsForm.setVisible(true);
+                friendsForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
         getForm().dispose();

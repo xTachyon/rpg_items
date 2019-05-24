@@ -33,25 +33,7 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="STUDENT: schema" type="3abd1b6a:OraImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="STUDENT: schema" type="3abd1b6a:OraImplModel$Schema" />
         <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="STUDENT: schema" type="3abd1b6a:OraImplModel$Schema" />
-        <item name="object types" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="STUDENT: schema" type="3abd1b6a:OraImplModel$Schema" />
-        <item name="collection types" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -61,38 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="540" column="47" selection-start-line="540" selection-start-column="47" selection-end-line="540" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpg_functions.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="435" column="4" selection-start-line="435" selection-start-column="4" selection-end-line="435" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_USERS">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Lab5/Exemple-2.sql">
+        <entry file="file://$PROJECT_DIR$/rpg_packages/rpg_utils.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+            <state relative-caret-position="391">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -104,6 +59,9 @@
       <find>prieteni</find>
       <find>class</find>
       <find>put_li</find>
+      <find>attack_damage</find>
+      <find>4952</find>
+      <find>update_</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -114,29 +72,57 @@
         <option value="/13820a94/0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/object-type/CHARACTER_LIST_RECORD.sql" />
         <option value="$PROJECT_DIR$/rpg_tables_init.sql" />
         <option value="$PROJECT_DIR$/../../Lab5/Exemple-2.sql" />
+        <option value="$PROJECT_DIR$/rpg_packages/rpg_login.sql" />
+        <option value="$PROJECT_DIR$/rpg_packages/rpg_character_select.sql" />
         <option value="$PROJECT_DIR$/rpg_functions.sql" />
+        <option value="$PROJECT_DIR$/rpg_packages/rpg_character.sql" />
+        <option value="$PROJECT_DIR$/rpg_packages/rpg_utils.sql" />
+        <option value="$PROJECT_DIR$/rpg_packages/rpg_friends.sql" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="167" />
-    <option name="y" value="-34" />
-    <option name="width" value="1550" />
-    <option name="height" value="851" />
+    <option name="x" value="133" />
+    <option name="y" value="-29" />
+    <option name="width" value="1938" />
+    <option name="height" value="1068" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="rpg_items" type="8cb6161f:DatabaseProjectViewPane$1$1" />
+              <item name="rpg_items" type="5b8f4e1:DatabaseProjectViewPane$1$1$1" />
+            </path>
+            <path>
+              <item name="rpg_items" type="8cb6161f:DatabaseProjectViewPane$1$1" />
+              <item name="rpg_items" type="5b8f4e1:DatabaseProjectViewPane$1$1$1" />
+              <item name="rpg_packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DBE.Init.BalloonShown" value="true" />
     <property name="DatabaseDriversLRU" value="oracle" />
     <property name="GoToClass.toSaveIncludeLibraries" value="true" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/rpg_tables_init.sql" />
     <property name="settings.editor.selected.configurable" value="database.main2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Anul_2\Sem 2\PSGBD\rpg_items\rpg_items\rpg_packages" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -161,48 +147,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Database" order="0" sideWeight="0.49840257" visible="true" weight="0.22547974" />
+      <window_info active="true" content_ui="combo" id="Database" order="0" sideWeight="0.49840257" visible="true" weight="0.28144988" />
       <window_info id="Favorites" order="1" sideWeight="0.50159746" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" weight="0.3290461" />
-      <window_info anchor="bottom" id="Database Console" order="5" visible="true" weight="0.26688102" />
-      <window_info anchor="bottom" id="Database Changes" order="6" weight="0.3290461" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Console" order="5" weight="0.37191853" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" weight="0.3290461" />
       <window_info anchor="right" content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info anchor="right" id="Structure" order="1" side_tool="true" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/PRIETENI/index/SYS_C007313" />
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/PRIETENI/index/NO_DUPLICATES" />
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/PRIETENI" />
-    <entry file="uml://DATABASE/0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_WEAKNESSES">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_WEAKNESSES</OriginalElement>
-          <nodes>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_WEAKNESSES</node>
-            <node x="" y="">0fad524c-b4e4-4404-bee0-a573d1dd0d43.TABLE:STUDENT.RPG_MAGIC_TYPES</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="126.0" y="110.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0fad524c-b4e4-4404-bee0-a573d1dd0d43/console_1.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -411,142 +372,146 @@
         <state relative-caret-position="-2893" />
       </provider>
     </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/collection-type/CHARACTER_LIST">
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/collection-type/CHARACTER_LIST" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_FRIENDS" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/view/RPG_MAGIC_WEAKNESSES_VIEW" />
+    <entry file="file://$PROJECT_DIR$/rpg_create_matei.sql" />
+    <entry file="file://$PROJECT_DIR$/rpg_create.sql" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/view/RPG_STATS_VIEW" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_MAGIC_WEAKNESSES" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEM_STATS" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEM_UTILITIES" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_CHARACTERS" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_STAT_TYPES" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/view/RPG_ITEMS_VIEW" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/view/RPG_FRIENDS_VIEW" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEMS" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEM_TYPES" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_MAGIC_TYPES" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEM_RARITY" />
+    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_USERS" />
+    <entry file="das://70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/table/RPG_ITEM_STATS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/table/RPG_MAGIC_WEAKNESSES">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/collection-type/ARR_VARCHAR2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/table/RPG_ITEMS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///13820a94/70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/object-type/STATS_REPORT.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_FRIENDS">
+    <entry file="das://70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/table/RPG_MAGIC_TYPES">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/view/RPG_MAGIC_WEAKNESSES_VIEW">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpg_create_matei.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpg_create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="478" column="2" selection-start-line="478" selection-start-column="2" selection-end-line="478" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/view/RPG_STATS_VIEW">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_MAGIC_WEAKNESSES">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEM_STATS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEM_UTILITIES">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_CHARACTERS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_STAT_TYPES">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/view/RPG_ITEMS_VIEW">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/view/RPG_FRIENDS_VIEW">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEMS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="540" column="47" selection-start-line="540" selection-start-column="47" selection-end-line="540" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEM_TYPES">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_MAGIC_TYPES">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_ITEM_RARITY">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpg_functions.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="435" column="4" selection-start-line="435" selection-start-column="4" selection-end-line="435" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Lab5/Exemple-2.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+        <state relative-caret-position="733">
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="das://0fad524c-b4e4-4404-bee0-a573d1dd0d43/schema/STUDENT/table/RPG_USERS">
+    <entry file="das://70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/table/RPG_FRIENDS">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/view/RPG_MAGIC_WEAKNESSES_VIEW">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/table/RPG_STAT_TYPES">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpg_packages/rpg_login.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpg_packages/rpg_character_select.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/table/RPG_CHARACTERS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpg_packages/rpg_character.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpg_tables_init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1796">
+          <caret line="540" column="47" selection-start-line="540" selection-start-column="47" selection-end-line="540" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/table/RPG_USERS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///13820a94/70e93f5c-4094-4255-b577-9aeae09ac2e6/schema/STUDENT/package/RPG_LOGIN.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpg_packages/rpg_friends.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="189" column="16" lean-forward="true" selection-start-line="189" selection-start-column="16" selection-end-line="189" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpg_packages/rpg_utils.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
         </state>
       </provider>
     </entry>
