@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CharacterForm extends JFrame{
+public class CharacterForm extends JFrame {
     private JTable itemsJTable;
     private JTable equipedItemsJTable;
     private JButton backButton;
@@ -26,10 +26,10 @@ public class CharacterForm extends JFrame{
 
     private CharacterController characterController;
 
-    CharacterForm(CharacterController characterController){
+    CharacterForm(CharacterController characterController) {
         this.characterController = characterController;
         setTitle("Character");
-        setSize(1600,800);
+        setSize(1600, 800);
 
         add(panel);
         statsTextArea.setText(characterController.loadCharacterStats());
@@ -43,9 +43,9 @@ public class CharacterForm extends JFrame{
         equipButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(itemsJTable.getSelectedRow()!= -1) {
+                if (itemsJTable.getSelectedRow() != -1) {
                     characterController.equip
-                            (Integer.parseInt(itemsJTable.getValueAt(itemsJTable.getSelectedRow(),0).toString()));
+                            (Integer.parseInt(itemsJTable.getValueAt(itemsJTable.getSelectedRow(), 0).toString()));
                 }
             }
         });
@@ -53,9 +53,9 @@ public class CharacterForm extends JFrame{
         sellButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(itemsJTable.getSelectedRow()!= -1) {
+                if (itemsJTable.getSelectedRow() != -1) {
                     characterController.sell
-                            (Integer.parseInt(itemsJTable.getValueAt(itemsJTable.getSelectedRow(),0).toString()));
+                            (Integer.parseInt(itemsJTable.getValueAt(itemsJTable.getSelectedRow(), 0).toString()));
                 }
             }
         });
@@ -63,9 +63,9 @@ public class CharacterForm extends JFrame{
         updateButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(itemsJTable.getSelectedRow()!= -1) {
+                if (itemsJTable.getSelectedRow() != -1) {
                     characterController.update
-                            (Integer.parseInt(itemsJTable.getValueAt(itemsJTable.getSelectedRow(),0).toString()));
+                            (Integer.parseInt(itemsJTable.getValueAt(itemsJTable.getSelectedRow(), 0).toString()));
                 }
             }
         });
@@ -73,7 +73,7 @@ public class CharacterForm extends JFrame{
         buyButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(buyRarityTExtField.getText() != null){
+                if (buyRarityTExtField.getText() != null) {
                     characterController.buy(buyRarityTExtField.getText());
                 }
             }
@@ -88,50 +88,47 @@ public class CharacterForm extends JFrame{
     }
 
 
-    public void reload_tables(){
-        String[] jTableColumnNames = {"ID", "LEVEL", "DURABILITY","EXPIRATION DATE","NAME","RARITY","MAGIC","STATS"};
+    public void reload_tables() {
+        String[] jTableColumnNames = {"ID", "LEVEL", "DURABILITY", "EXPIRATION DATE", "NAME", "RARITY", "MAGIC", "STATS"};
         ARRAY array = characterController.loadItems();
-        itemsJTable = UtilsForms.loadJTable(itemsJTable, array, jTableColumnNames,true);
+        itemsJTable = UtilsForms.loadJTable(itemsJTable, array, jTableColumnNames, true);
         modify_table_aspect(itemsJTable);
         array = characterController.loadEquipedItems();
-        equipedItemsJTable = UtilsForms.loadJTable(equipedItemsJTable, array, jTableColumnNames,true);
+        equipedItemsJTable = UtilsForms.loadJTable(equipedItemsJTable, array, jTableColumnNames, true);
         modify_table_aspect(equipedItemsJTable);
         statsTextArea.setText(characterController.loadCharacterStats());
     }
 
     private void createUIComponents() {
-        String[] jTableColumnNames = {"ID", "LEVEL", "DURABILITY","EXPIRATION DATE","NAME","RARITY","MAGIC","STATS"};
+        String[] jTableColumnNames = {"ID", "LEVEL", "DURABILITY", "EXPIRATION DATE", "NAME", "RARITY", "MAGIC", "STATS"};
         ARRAY array = characterController.loadItems();
-        itemsJTable = UtilsForms.loadJTable(itemsJTable, array, jTableColumnNames,false);
+        itemsJTable = UtilsForms.loadJTable(itemsJTable, array, jTableColumnNames, false);
         modify_table_aspect(itemsJTable);
         array = characterController.loadEquipedItems();
-        equipedItemsJTable = UtilsForms.loadJTable(equipedItemsJTable, array, jTableColumnNames,false);
+        equipedItemsJTable = UtilsForms.loadJTable(equipedItemsJTable, array, jTableColumnNames, false);
         modify_table_aspect(equipedItemsJTable);
-        statsTextArea = new JTextArea(30,30);
+        statsTextArea = new JTextArea(30, 30);
         statsTextArea.setEditable(false);
     }
 
-    private void modify_table_aspect(JTable jTable){
-        for (int column = 0; column < jTable.getColumnCount(); column++)
-        {
+    private void modify_table_aspect(JTable jTable) {
+        for (int column = 0; column < jTable.getColumnCount(); column++) {
             TableColumn tableColumn = jTable.getColumnModel().getColumn(column);
             int preferredWidth = tableColumn.getMinWidth();
             int maxWidth = tableColumn.getMaxWidth();
 
-            for (int row = 0; row < jTable.getRowCount(); row++)
-            {
+            for (int row = 0; row < jTable.getRowCount(); row++) {
                 TableCellRenderer cellRenderer = jTable.getCellRenderer(row, column);
                 Component c = jTable.prepareRenderer(cellRenderer, row, column);
                 int width = c.getPreferredSize().width + jTable.getIntercellSpacing().width;
                 preferredWidth = Math.max(preferredWidth, width);
-                if (preferredWidth >= maxWidth)
-                {
+                if (preferredWidth >= maxWidth) {
                     preferredWidth = maxWidth;
                     break;
                 }
             }
 
-            tableColumn.setPreferredWidth( preferredWidth );
+            tableColumn.setPreferredWidth(preferredWidth);
         }
     }
 }

@@ -13,10 +13,10 @@ public class BattleForm extends JFrame {
     private JPanel panel;
     private BattleController battleController;
 
-    BattleForm(BattleController battleController){
+    BattleForm(BattleController battleController) {
         this.battleController = battleController;
         setTitle("Battle");
-        setSize(1600,800);
+        setSize(1600, 800);
 
         text.setEditable(false);
         add(panel);
@@ -29,36 +29,36 @@ public class BattleForm extends JFrame {
         battleButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(characterJTable.getSelectedRow()!= -1 && friendJTable.getSelectedRow()!= -1) {
+                if (characterJTable.getSelectedRow() != -1 && friendJTable.getSelectedRow() != -1) {
                     text.setText(battleController.battle
-                            (Integer.parseInt(characterJTable.getValueAt(characterJTable.getSelectedRow(),0).toString()),
-                             Integer.parseInt(friendJTable.getValueAt(friendJTable.getSelectedRow(),0).toString())));
+                            (Integer.parseInt(characterJTable.getValueAt(characterJTable.getSelectedRow(), 0).toString()),
+                                    Integer.parseInt(friendJTable.getValueAt(friendJTable.getSelectedRow(), 0).toString())));
                 }
             }
         });
     }
 
-    public void reload_table(){
-        String[] jTableColumnNames = {"ID", "NAME", "LEVEL","Days until deleted"};
+    public void reload_table() {
+        String[] jTableColumnNames = {"ID", "NAME", "LEVEL", "Days until deleted"};
         ARRAY array = battleController.loadCharacters(false);
-        characterJTable = UtilsForms.loadJTable(characterJTable, array, jTableColumnNames,true);
+        characterJTable = UtilsForms.loadJTable(characterJTable, array, jTableColumnNames, true);
         array = battleController.loadCharacters(true);
-        friendJTable = UtilsForms.loadJTable(friendJTable, array, jTableColumnNames,true);
+        friendJTable = UtilsForms.loadJTable(friendJTable, array, jTableColumnNames, true);
         modify_table_aspect(characterJTable);
         modify_table_aspect(friendJTable);
     }
 
     private void createUIComponents() {
-        String[] jTableColumnNames = {"ID", "NAME", "LEVEL","Days until deleted"};
+        String[] jTableColumnNames = {"ID", "NAME", "LEVEL", "Days until deleted"};
         ARRAY array = battleController.loadCharacters(false);
-        characterJTable = UtilsForms.loadJTable(characterJTable, array, jTableColumnNames,false);
+        characterJTable = UtilsForms.loadJTable(characterJTable, array, jTableColumnNames, false);
         array = battleController.loadCharacters(true);
-        friendJTable = UtilsForms.loadJTable(friendJTable, array, jTableColumnNames,false);
+        friendJTable = UtilsForms.loadJTable(friendJTable, array, jTableColumnNames, false);
         modify_table_aspect(characterJTable);
         modify_table_aspect(friendJTable);
     }
 
-    private void modify_table_aspect(JTable jTable){
+    private void modify_table_aspect(JTable jTable) {
         jTable.getColumnModel().getColumn(3).setPreferredWidth(0);
     }
 }

@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CompareItemsForm extends JFrame{
+public class CompareItemsForm extends JFrame {
     private JButton compareButton;
     private JSpinner itemId1Spinner;
     private JSpinner itemId2Spinner;
@@ -14,7 +14,7 @@ public class CompareItemsForm extends JFrame{
     public CompareItemsForm(CompareItemsController compareItemsController) {
         this.compareItemsController = compareItemsController;
         setTitle("Character");
-        setSize(400,200);
+        setSize(400, 200);
 
         add(panel);
 
@@ -29,7 +29,7 @@ public class CompareItemsForm extends JFrame{
     }
 
     private void createUIComponents() {
-        comparationResultTextArea = new JTextArea(30,30);
+        comparationResultTextArea = new JTextArea(30, 30);
         comparationResultTextArea.setEditable(false);
     }
 }

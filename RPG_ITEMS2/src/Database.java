@@ -7,7 +7,10 @@ public class Database {
     private static final String USER = "STUDENT";
     private static final String PASSWORD = "STUDENT";
     private static Connection connection = null;
-    private Database() { }
+
+    private Database() {
+    }
+
     public static Connection getConnection() {
         if (connection == null) {
             createConnection();
@@ -19,28 +22,31 @@ public class Database {
         try {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
             connection.setAutoCommit(false);
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             System.err.println("SQLException: " + e);
         }
     }
+
     public static void closeConnection() {
-        try{
+        try {
             connection.close();
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             System.err.println("SQLException: " + e);
         }
     }
+
     public static void commit() {
-        try{
+        try {
             connection.commit();
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             System.err.println("SQLException: " + e);
         }
     }
+
     public static void rollback() {
-        try{
+        try {
             connection.rollback();
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             System.err.println("SQLException: " + e);
         }
     }
